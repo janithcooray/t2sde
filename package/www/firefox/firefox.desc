@@ -21,14 +21,14 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/office
-[F] CROSS NO-LIBTOOL-FIX NO-LTO LATOMIC.x86
+[F] CROSS NO-LIBTOOL-FIX NO-LTO LATOMIC.x86 LATOMIC.sparc LATOMIC.sparc64
 [R] - riscv
 
 [L] MPL
 [S] Stable
-[V] 118.0
+[V] 119.0
 [P] X -----5---9 152.700
 
 [O] . $base/package/*/*/mozilla-conf.in
 
-[D] 8b1c557c45d724d13d6339031ade016d17f196e5adcbc9d701a147f8 firefox-118.0.source.tar.xz https://ftp.mozilla.org/pub/firefox/releases/118.0/source/
+[D] f7845127b80dd679a442f1dd70847a8a6146e53c4b55ad4e025039ce firefox-119.0.source.tar.xz https://ftp.mozilla.org/pub/firefox/releases/119.0/source/

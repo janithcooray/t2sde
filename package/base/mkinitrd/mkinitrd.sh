@@ -31,7 +31,8 @@ vitalmods[xhci-pci.ko]=1 # probably every modern machine
 
 # TODO: defauls for vintage vs. latest, usb, pata, etc.
 filter="-e ext4 -e isofs -e pata_legacy -e pata_.*platform -e sym53c8xx
--e s[rd]_mod -e /ahci.ko -e /nvme.ko -e [uoex]hci-pci -e usbhid -e zram"
+-e s[rd]_mod -e /ahci.ko -e /nvme.ko -e [uoex]hci-pci -e usbhid -e zram
+-e /offb -e ps3fb"
 
 declare -A added
 
@@ -57,11 +58,11 @@ while [ "$1" ]; do
   shift
 done
 
-[ "$minimal" != 1 ] && filter="$filter -e reiserfs -e btrfs -e /jfs -e /xfs -e jffs2
+[ -z "$minimal" ] && filter="$filter -e reiserfs -e btrfs -e /jfs -e /xfs -e jffs2
 -e ext2 -e /udf -e /unionfs -e ntfs -e /fat -e /hfs -e floppy -e efivarfs
 -e /ata/ -e /scsi/ -e /fusion/ -e /sdhci/ -e nvme/host -e /mmc/
 -e virtio.\(blk\|scsi\|net\|console\|input\|gpu\|pci\)
--e /ast/ -e ps3fb -e ps3disk -e drivers/pcmcia
+-e /ast/ -e ps3disk -e drivers/pcmcia
 -e dm-mod -e dm-raid -e md/raid -e dm/mirror -e dm/linear -e dm-crypt -e dm-cache
 -e /rtc/ -e /aes -e /sha -e /blake -e /cbc -e /ecb -e xts
 -e cciss -e ips -e nls_cp437 -e nls_iso8859-1 -e nls_utf8
@@ -69,13 +70,13 @@ done
 -e usbhid -e i2c-hid -e hid-generic -e hid-multitouch
 -e hid-apple -e hid-microsoft -e hyperv-keyboard -e pci/controller"
 
-[ "$network" = 1 ] && filter="$filter -e /ipv4/ -e '/ipv6\.' -e ethernet -e nfsv4"
+[ "$network" ] && filter="$filter -e /ipv4/ -e '/ipv6\.' -e ethernet -e nfsv4"
 
 [ "$kernelver" ] || kernelver=`uname -r`
 [ "$moddir" ] || moddir="$root/lib/modules/$kernelver"
 
-if [ ! "$outfile" ]; then
-    [ "$minimal" = 1 ] &&
+if [ -z "$outfile" ]; then
+    [ "$minimal" ] &&
 	outfile="$root/boot/minird-$kernelver" ||
 	outfile="$root/boot/initrd-$kernelver"
 fi
@@ -130,16 +131,16 @@ if [ "$moddir" ]; then
  echo "Copying kernel modules ..."
  (
   add_depend() {
-     local skipped=
-     local x="$1"
+	local skipped=
+	local x="$1" module="${1##*/}"
 
-     # expand to full name if it was a depend
-     [ $x = ${x##*/} ] && x=`sed -n "/\/$x\.ko.*/{p; q}" $map`
+	[ "${added["$module"]}" ] && return
 
-     if [ "${added["$x"]}" != 1 ]; then
-	added["$x"]=1
+	# expand to full name if it was a depend
+	[ $x = ${x##*/} ] && x=`sed -n "/\/${x/./\\.}.*/{p; q}" $map`
 
-	local module=${x##*/}
+	added["$module"]=1
+
 	echo -n "$module "
 
 	# strip $root prefix
@@ -165,7 +166,7 @@ if [ "$moddir" ]; then
 			echo -n ", $fn"
 			cp -af "$root$fn" "$dir/"
 			# TODO: copy source if symlink
-			[ -f "$tmpdir$fn" ] && $compressor --rm -f --quiet "$tmpdir$fn"
+			[ -f "$tmpdir$fn" ] && $compressor --rm -f --quiet "$tmpdir$fn" &
 		    fi
 		done
 		echo
@@ -178,17 +179,13 @@ if [ "$moddir" ]; then
 	if [ -z "$skipped" ]; then
 	    mkdir -p `dirname ./$xt` # TODO: use builtin?
 	    cp -af $x $tmpdir$xt
-	    $compressor --rm -f --quiet $tmpdir$xt
+	    $compressor --rm -f --quiet $tmpdir$xt &
 
 	    # add it's deps, too
 	    for fn in `$modinfo -F depends $x | sed 's/,/ /g'`; do
-		add_depend "$fn"
+		add_depend "$fn.ko"
 	    done
 	fi
-     else
-	#echo "already there"
-	:
-     fi
   }
 
   find -H $moddir/ -type f -name '*.ko*' > $map
@@ -196,6 +193,8 @@ if [ "$moddir" ]; then
   while read fn; do
 	add_depend "$fn"
   done
+
+  wait
  ) | fold -s; echo
 
  # generate map files
@@ -221,12 +220,12 @@ cp -ar $root/etc/modprobe.* $root/etc/ld-* $tmpdir/etc/ 2>/dev/null || true
 cp -a $root/lib/udev/{ata,scsi,cdrom}_id $tmpdir/lib/udev/
 
 elf_magic () {
-	readelf -h "$1" | grep 'Machine\|Class'
+	readelf -h "$1" 2>/dev/null | grep 'Machine\|Class'
 }
 
 # copy dynamic libraries, and optional plugins, if any.
 #
-if [ "$minimal" = 1 ]; then
+if [ "$minimal" ]; then
 	extralibs="`ls $root/lib*/{libdl,libncurses.so}* 2>/dev/null || true`"
 else
 	# glibc only
@@ -236,7 +235,7 @@ fi
 copy_dyn_libs () {
 	local magic
 	# we can not use ldd(1) as it loads the object, which does not work on cross builds
-	for lib in $extralibs `readelf -de $1 |
+	for lib in $extralibs `readelf -de $1 2>/dev/null |
 		sed -n -e 's/.*Shared library.*\[\([^]\]*\)\]/\1/p' \
 		       -e 's/.*Requesting program interpreter: \([^]]*\)\]/\1/p'`
 	do
@@ -251,10 +250,11 @@ copy_dyn_libs () {
 			if [ -e $libdir$lib ]; then
 			    [ ! -L $libdir$lib -a "$magic" != "$(elf_magic $libdir$lib)" ] && continue
 			    xlibdir=${libdir#$root}
-			    echo "	${1#$root} NEEDS $xlibdir$lib"
 
-			    if [ "${added["$xlibdir$lib"]}" != 1 ]; then
+			    if [ -z "${added["$xlibdir$lib"]}" ]; then
 				added["$xlibdir$lib"]=1
+
+				echo "	${1#$root} NEEDS $xlibdir$lib"
 
 				mkdir -p ./$xlibdir
 				while local x=`readlink $libdir$lib`; [ "$x" ]; do
@@ -289,7 +289,7 @@ done
 
 # setup optional programs
 #
-[ "$minimal" != 1 ] &&
+[ -z "$minimal" ] &&
 for x in $root/sbin/{insmod,blkid,lvm,vgchange,lvchange,vgs,lvs,mdadm} \
 	 $root/usr/sbin/{cryptsetup,cache_check,ipconfig} $root/usr/embutils/{dmesg,swapon}
 do

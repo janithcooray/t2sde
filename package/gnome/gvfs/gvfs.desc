@@ -23,11 +23,11 @@
 
 [L] LGPL
 [S] Stable
-[V] 1.50.4
+[V] 1.52.1
 [P] X -----5---9 142.400
 
 [O] . $base/package/*/*/gnome-conf.in
 
 [CV-FLAGS] ODD-STABLE
 [CV-URL] https://download.gnome.org/sources/gvfs/cache.json
-[D] b840dd48e6ed9058e85bbe7c4f2f0cd2803854dbb87747764c1dbc24 gvfs-1.50.4.tar.xz https://download.gnome.org/sources/gvfs/1.50/
+[D] e2837b41944ec1f108d345c6664668f7b0926065802c03bb62025a48 gvfs-1.52.1.tar.xz https://download.gnome.org/sources/gvfs/1.52/

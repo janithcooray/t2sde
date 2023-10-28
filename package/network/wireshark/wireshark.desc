@@ -28,7 +28,7 @@
 
 [L] GPL
 [S] Stable
-[V] 4.0.8
+[V] 4.0.10
 [P] X -----5---9 200.100
 
-[D] 22fb73df7403835cc18c3c60550bc46585beb1e71e1243e838589e8c wireshark-4.0.8.tar.xz https://1.eu.dl.wireshark.org/src/
+[D] 101235014e9226970aabcfc0e43582a6e226ea7566594f94d369e61c wireshark-4.0.10.tar.xz https://1.eu.dl.wireshark.org/src/

@@ -54,3 +54,13 @@
      } else if cfg!(all(target_arch = "riscv64", target_endian = "little")) {
          "ioctl_riscv64.rs"
      } else {
+--- firefox-117.0/third_party/rust/nix/src/sys/ioctl/linux.rs.vanilla	2023-09-12 22:51:54.468391113 +0200
++++ firefox-117.0/third_party/rust/nix/src/sys/ioctl/linux.rs	2023-09-12 22:57:28.292369165 +0200
+@@ -19,6 +19,7 @@
+     target_arch = "mips64",
+     target_arch = "powerpc",
+     target_arch = "powerpc64",
++    target_arch = "sparc",
+     target_arch = "sparc64"
+ ))]
+ mod consts {

@@ -11,19 +11,23 @@
 # of the GNU General Public License version 2 as used by the T2 SDE.
 # --- T2-COPYRIGHT-NOTE-END ---
 
---- rustc-1.69.0-src/compiler/rustc_codegen_ssa/src/back/metadata.rs.vanilla	2023-05-03 14:51:21.881568766 +0200
-+++ rustc-1.69.0-src/compiler/rustc_codegen_ssa/src/back/metadata.rs	2023-05-03 14:55:08.168581623 +0200
-@@ -152,7 +152,12 @@
-                 _ => elf::EF_MIPS_ARCH_32R2,
-             };
-             // The only ABI LLVM supports for 32-bit MIPS CPUs is o32.
--            let mut e_flags = elf::EF_MIPS_CPIC | elf::EF_MIPS_ABI_O32 | arch;
-+            let mut e_flags = elf::EF_MIPS_CPIC | arch;
+--- rustc-1.73.0-src/compiler/rustc_codegen_ssa/src/back/metadata.rs.vanilla	2023-10-12 19:11:54.409014170 +0200
++++ rustc-1.73.0-src/compiler/rustc_codegen_ssa/src/back/metadata.rs	2023-10-12 19:13:17.268016343 +0200
+@@ -244,12 +244,11 @@
+ 
+             let mut e_flags = elf::EF_MIPS_CPIC | arch;
+ 
+-            // If the ABI is explicitly given, use it or default to O32.
+-            match sess.target.options.llvm_abiname.to_lowercase().as_str() {
+-                "n32" => e_flags |= elf::EF_MIPS_ABI2,
+-                "o32" => e_flags |= elf::EF_MIPS_ABI_O32,
+-                _ => e_flags |= elf::EF_MIPS_ABI_O32,
+-            };
 +            if sess.target.options.abi.contains("n32") {
 +                e_flags |= elf::EF_MIPS_ABI2;
 +            } else {
 +                e_flags |= elf::EF_MIPS_ABI_O32;
 +            }
+ 
              if sess.target.options.relocation_model != RelocModel::Static {
                  e_flags |= elf::EF_MIPS_PIC;
-             }

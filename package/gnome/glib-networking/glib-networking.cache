@@ -21,10 +21,9 @@
 [DEP] libtasn1
 [DEP] linux-header
 [DEP] meson
-[DEP] net-tools
 [DEP] nettle
 [DEP] ninja
-[DEP] openssl
+[OPT] openssl
 [DEP] patch
 [DEP] pcre2
 [DEP] python

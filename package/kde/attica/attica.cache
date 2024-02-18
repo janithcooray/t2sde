@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695852102 Thu Sep 28 00:01:42 2023
-[BUILDTIME] 16 (9)
-[SIZE] 0.85 MB, 108 files
+[TIMESTAMP] 1707061318 Sun Feb  4 15:41:58 2024
+[BUILDTIME] 35 (9)
+[SIZE] 0.85 MB, 107 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -17,7 +17,6 @@
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
 [DEP] python
 [DEP] qt5base
 [DEP] qt5imageformats
@@ -26,4 +25,5 @@
 [DEP] qt5wayland
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

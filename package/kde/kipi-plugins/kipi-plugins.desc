@@ -22,10 +22,10 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.2
+[V] 23.08.4
 [P] X -----5---9 162.420
 
 [O] . $base/package/*/*/kde-conf.in
 
 [CV-FLAGS] ODD-STABLE
-[D] cd2192b5f55cb9bab4c4966aaa5e0694a806c17a6467bbde7c28d31d kipi-plugins-23.08.2.tar.xz https://download.kde.org/stable/release-service/23.08.2/src/
+[D] c82b560f2bd0e5099e755c22e3424ad87a616eb93780b071ca374249 kipi-plugins-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/

@@ -1,10 +1,11 @@
 
-[TIMESTAMP] 1690848009 Tue Aug  1 02:00:09 2023
-[BUILDTIME] 2 (9)
-[SIZE] 9.41 MB, 420 files
+[TIMESTAMP] 1703088364 Wed Dec 20 17:06:04 2023
+[BUILDTIME] 8 (9)
+[SIZE] 19.24 MB, 1297 files
 
 [DEP] 00-dirtree
 [DEP] bash
+[DEP] bzip2
 [DEP] coreutils
 [DEP] dbus
 [DEP] diffutils
@@ -14,6 +15,6 @@
 [DEP] grep
 [DEP] make
 [DEP] patch
+[DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] wayland-protocols

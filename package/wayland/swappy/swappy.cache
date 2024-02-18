@@ -1,16 +1,29 @@
 
-[TIMESTAMP] 1694032573 Wed Sep  6 22:36:13 2023
-[BUILDTIME] 3 (9)
-[SIZE] 0.14 MB, 14 files
+[TIMESTAMP] 1704123488 Mon Jan  1 16:38:08 2024
+[BUILDTIME] 2 (9)
+[SIZE] 0.11 MB, 14 files
 
 [DEP] 00-dirtree
+[DEP] at-spi2-core
+[DEP] bash
 [DEP] binutils
+[DEP] cairo
 [DEP] coreutils
-[DEP] grim
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] gdk-pixbuf
+[DEP] gettext
+[DEP] glib
+[DEP] grep
 [DEP] gtk+
 [DEP] gzip
+[DEP] harfbuzz
+[DEP] linux-header
+[DEP] make
 [DEP] meson
 [DEP] ninja
+[DEP] pango
 [DEP] scdoc
-[DEP] slurp
+[DEP] sed
 [DEP] tar

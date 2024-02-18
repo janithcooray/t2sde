@@ -26,14 +26,16 @@ e2fsprogs          reiserfsprogs      reiser4progs       genromfs
 popt               raidtools          mdadm              pcre
 lvm                lvm2               device-mapper      libaio
 dump               eject              disktype           mac-fdisk
-hdparm             memtest86          cpuburn            bonnie++
+libnvme            nvme-cli           hdparm             sgutils
+smartmontools      stressapptest
 ncurses            readline           libgpg-error       libgcrypt
 bash               attr               acl                findutils
 mktemp             coreutils          pciutils           libcap
-grep               sed                gzip               bzip2
-tar                gawk               lzo                lzop
-less               nvi                bc                 cpio
-xz                 zstd               ed                 zile
+grep               sed                less
+gzip               bzip2              xz                 zstd
+lzo                lzop               keyutils
+tar                gawk               bc                 cpio
+ed                 zile
 curl               dialog             minicom            kmod
 lrzsz              rsync              tcpdump            module-init-tools
 sysvinit           shadow             util-linux         wireless-tools
@@ -42,7 +44,7 @@ modutils           pciutils           portmap            inih
 sysklogd           setserial          iproute2           liburcu
 netkit-base        netkit-ftp         netkit-telnet      netkit-tftp
 sysfiles           libpcap            iptables           tcp_wrappers
-stone              rocknet            kexec-tools
+stone              rocknet            kexec-tools        memtest86
 kbd                ntfsprogs          libol              memtester
 openssl            openssh            iproute2           eudev"
 
@@ -83,10 +85,10 @@ done | (
 
 # some more stuff
 cut -d ' ' -f 2 $build_root/var/adm/flists/{kbd,pciutils,ncurses} |
-grep -e 'usr/share/terminfo/.*/\(ansi\|linux\|.*xterm.*\|vt.*\|screen\|tmux\)' \
+grep -e 'usr/share/terminfo/.*/\(ansi\|linux\|screen\|tmux\|xterm\|xterm-color\)' \
      -e 'usr/share/kbd/keymaps/i386/\(include\|azerty\|qwertz\|qwerty\)' \
      -e 'usr/share/kbd/keymaps/include' \
-     -e 'usr/share/pci.ids' \
+     -e 'usr/share/.*pci.ids' \
  >> ../2nd_stage.files
 
 copy_with_list_from_file $build_root $PWD $PWD/../2nd_stage.files
@@ -177,9 +179,9 @@ mkdir -p etc/stone.d
 for i in gui_text gui_dialog mod_install mod_packages mod_gas default; do
 	mv ../2nd_stage/etc/stone.d/$i.sh etc/stone.d
 done
-mkdir -p usr/share/terminfo/{v,l}/
+mkdir -p usr/share/terminfo/{l,x}
 mv ../2nd_stage/usr/share/terminfo/l/linux usr/share/terminfo/l/
-mv ../2nd_stage/usr/share/terminfo/v/vt102 usr/share/terminfo/v/
+mv ../2nd_stage/usr/share/terminfo/x/xterm-color usr/share/terminfo/x/
 mv ../2nd_stage/root root
 
 echo_status "Removing shared libraries already in initrd:"

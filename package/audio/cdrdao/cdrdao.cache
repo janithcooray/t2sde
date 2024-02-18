@@ -1,17 +1,19 @@
 
-[TIMESTAMP] 1684778621 Mon May 22 18:03:41 2023
-[BUILDTIME] 5 (9)
-[SIZE] 1.83 MB, 67 files
+[TIMESTAMP] 1707069033 Sun Feb  4 17:50:33 2024
+[BUILDTIME] 12 (9)
+[SIZE] 2.30 MB, 67 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] lame
 [DEP] libao
-[DEP] libid3tag
 [DEP] libmad
 [DEP] libogg
 [DEP] libvorbis
@@ -19,5 +21,5 @@
 [DEP] make
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] unzip
-[DEP] zlib

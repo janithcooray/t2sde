@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1690847313 Tue Aug  1 01:48:33 2023
-[BUILDTIME] 3 (9)
-[SIZE] 0.33 MB, 58 files
+[TIMESTAMP] 1707061184 Sun Feb  4 15:39:44 2024
+[BUILDTIME] 6 (9)
+[SIZE] 0.33 MB, 57 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -17,3 +17,5 @@
 [DEP] qt5base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] xz

@@ -1,22 +1,32 @@
 
-[TIMESTAMP] 1690849057 Tue Aug  1 02:17:37 2023
-[BUILDTIME] 1 (9)
-[SIZE] 2.96 MB, 330 files
+[TIMESTAMP] 1705351664 Mon Jan 15 21:47:44 2024
+[BUILDTIME] 8 (9)
+[SIZE] 44.80 MB, 1183 files
 
 [DEP] 00-dirtree
 [DEP] bash
+[DEP] binutils
+[DEP] cairo
 [DEP] coreutils
+[DEP] cups
+[DEP] dbus
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
-[DEP] gettext
 [DEP] glib
+[DEP] gobject-introspection
 [DEP] grep
-[DEP] gtk+
-[DEP] meson
-[DEP] ninja
+[DEP] gzip
+[DEP] libffi
+[DEP] libx11
+[DEP] libxcb
+[DEP] linux-header
+[DEP] make
 [DEP] patch
+[DEP] pip
+[DEP] pkgconfig
 [DEP] python
+[DEP] rustc
 [DEP] sed
-[DEP] shared-mime-info
 [DEP] tar
+[DEP] xorgproto

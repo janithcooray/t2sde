@@ -1,13 +1,14 @@
 
-[TIMESTAMP] 1661894490 Tue Aug 30 23:21:30 2022
-[BUILDTIME] 30 (9)
-[SIZE] 1.50 MB, 54 files
+[TIMESTAMP] 1704841758 Wed Jan 10 01:09:18 2024
+[BUILDTIME] 5 (9)
+[SIZE] 1.51 MB, 54 files
 
 [DEP] 00-dirtree
 [DEP] apr
-[DEP] automake
+[DEP] bash
 [DEP] bdb
 [DEP] binutils
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] expat
@@ -19,5 +20,3 @@
 [DEP] sed
 [DEP] sqlite
 [DEP] tar
-[DEP] util-linux
-[DEP] zlib

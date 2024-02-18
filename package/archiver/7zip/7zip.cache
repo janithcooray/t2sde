@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1279502240 Mon Jul 19 03:17:20 2010
-[BUILDTIME] 20 (5)
-[SIZE] 1.39 MB, 63 files
+[TIMESTAMP] 1703976466 Sat Dec 30 23:47:46 2023
+[BUILDTIME] 35 (9)
+[SIZE] 2.54 MB, 7 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
@@ -12,7 +13,7 @@
 [DEP] grep
 [DEP] linux-header
 [DEP] make
-[DEP] patch
 [DEP] sed
-[DEP] sysfiles
 [DEP] tar
+[DEP] tbb
+[DEP] xz

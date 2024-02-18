@@ -1,6 +1,6 @@
 
-[TIMESTAMP] 1697734853 Thu Oct 19 19:00:53 2023
-[BUILDTIME] 1 (9)
+[TIMESTAMP] 1703765700 Thu Dec 28 12:15:00 2023
+[BUILDTIME] 2 (9)
 [SIZE] 0.39 MB, 27 files
 
 [DEP] 00-dirtree
@@ -11,17 +11,9 @@
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
-[DEP] itstool
-[DEP] liquidctl
-[DEP] mako
-[DEP] meson
 [DEP] openssl
-[DEP] pexpect
 [DEP] pip
-[DEP] ptyprocess
-[DEP] pyftdi
 [DEP] python
 [DEP] rustc
 [DEP] sed
-[DEP] setuptools
 [DEP] tar

@@ -31,7 +31,7 @@
 
 [L] GPL
 [S] Stable
-[V] 21.0.0
+[V] 21.0.2
 [P] X -----5---9 150.000
 
-[D] 3d7388126b6e752b18a200dc56326ec55092d5aeb760b24c5e1c1333 asterisk-21.0.0.tar.gz https://downloads.asterisk.org/pub/telephony/asterisk/
+[D] ec6f865d4006a2051545e11eac694fed95488d42a3775209a1c87d10 asterisk-21.0.2.tar.gz https://downloads.asterisk.org/pub/telephony/asterisk/

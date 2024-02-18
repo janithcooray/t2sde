@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695848915 Wed Sep 27 23:08:35 2023
-[BUILDTIME] 1 (9)
-[SIZE] 2.20 MB, 270 files
+[TIMESTAMP] 1707574529 Sat Feb 10 14:15:29 2024
+[BUILDTIME] 2 (9)
+[SIZE] 2.27 MB, 287 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -11,7 +11,7 @@
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
-[DEP] itstool
+[DEP] openssl
 [DEP] patch
 [DEP] python
 [DEP] sed

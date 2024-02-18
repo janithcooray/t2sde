@@ -1,6 +1,6 @@
 
-[TIMESTAMP] 1695850810 Wed Sep 27 23:40:10 2023
-[BUILDTIME] 1 (9)
+[TIMESTAMP] 1706871524 Fri Feb  2 11:58:44 2024
+[BUILDTIME] 3 (9)
 [SIZE] 2.60 MB, 33 files
 
 [DEP] 00-dirtree
@@ -15,6 +15,7 @@
 [DEP] linux-header
 [DEP] make
 [DEP] patch
+[OPT] pkgconfig
 [DEP] readline
 [DEP] sed
 [DEP] tar

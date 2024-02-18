@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1689970544 Sat Jul 22 01:15:44 2023
-[BUILDTIME] 115 (9)
+[TIMESTAMP] 1704018902 Sun Dec 31 11:35:02 2023
+[BUILDTIME] 230 (9)
 [SIZE] 9.25 MB, 616 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
@@ -16,5 +17,8 @@
 [DEP] perl
 [DEP] qt5base
 [DEP] qt5declarative
+[DEP] qt5purchasing
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] xz

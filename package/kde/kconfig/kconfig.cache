@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695852170 Thu Sep 28 00:02:50 2023
-[BUILDTIME] 30 (9)
-[SIZE] 1.70 MB, 179 files
+[TIMESTAMP] 1707061734 Sun Feb  4 15:48:54 2024
+[BUILDTIME] 80 (9)
+[SIZE] 1.79 MB, 362 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -14,10 +14,9 @@
 [DEP] git
 [DEP] grep
 [DEP] kde-extra-cmake-modules
-[DEP] ki18n
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
+[OPT] openldap
 [DEP] qt5base
 [DEP] qt5declarative
 [DEP] qt5imageformats
@@ -27,4 +26,5 @@
 [DEP] qt5wayland
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

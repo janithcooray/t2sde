@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692377183 Fri Aug 18 18:46:23 2023
-[BUILDTIME] 75 (9)
-[SIZE] 33.70 MB, 823 files
+[TIMESTAMP] 1703945849 Sat Dec 30 15:17:29 2023
+[BUILDTIME] 100 (9)
+[SIZE] 35.99 MB, 825 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -23,14 +23,16 @@
 [DEP] libtiff
 [DEP] libtool
 [DEP] libwebp
+[DEP] libx11
+[DEP] libxext
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
-[DEP] openjpeg
 [DEP] pango
-[DEP] perl
+[OPT] perl
 [DEP] sed
 [DEP] tar
+[DEP] xorgproto
 [DEP] xz
 [DEP] zlib
 [DEP] zstd

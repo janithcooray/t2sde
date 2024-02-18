@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1690847290 Tue Aug  1 01:48:10 2023
-[BUILDTIME] 2 (9)
-[SIZE] 0.21 MB, 23 files
+[TIMESTAMP] 1703617815 Tue Dec 26 19:10:15 2023
+[BUILDTIME] 4 (9)
+[SIZE] 0.21 MB, 21 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -12,9 +12,9 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] gzip
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
 [DEP] qt5base
 [DEP] sed
 [DEP] tar

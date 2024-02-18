@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1691784384 Fri Aug 11 22:06:24 2023
+[TIMESTAMP] 1707060342 Sun Feb  4 15:25:42 2024
 [BUILDTIME] 1 (9)
-[SIZE] 0.90 MB, 143 files
+[SIZE] 0.91 MB, 143 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -11,7 +11,7 @@
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
-[DEP] itstool
+[DEP] openssl
 [DEP] python
 [DEP] sed
 [DEP] setuptools

@@ -22,6 +22,10 @@
 [M] Valentin Ziegler <valentin@t2-project.org>
 
 [C] extra/scientific
+[F] NO-LTO.gcc
+
+[E] opt qt5base
+[E] opt ghostscript
 
 [L] Free-to-use
 [S] Stable

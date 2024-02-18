@@ -1,36 +1,43 @@
 
-[TIMESTAMP] 1684808560 Tue May 23 02:22:40 2023
-[BUILDTIME] 0 (9)
-[SIZE] 0.48 MB, 50 files
+[TIMESTAMP] 1704123517 Mon Jan  1 16:38:37 2024
+[BUILDTIME] 6 (9)
+[SIZE] 0.53 MB, 50 files
 
 [DEP] 00-dirtree
+[DEP] alsa-lib
+[DEP] bash
 [DEP] binutils
+[DEP] bison
+[DEP] check
+[DEP] cmake
 [DEP] coreutils
 [DEP] curl
-[DEP] dbus
+[DEP] diffutils
+[DEP] findutils
+[DEP] flex
 [DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
-[DEP] git
-[DEP] glib
 [DEP] grep
+[DEP] gzip
 [DEP] harfbuzz
 [DEP] json-c
-[DEP] libffi
 [DEP] libinput
-[DEP] libpng
-[DEP] libxau
-[DEP] libxcb
+[DEP] libmpdclient
 [DEP] libyaml
+[DEP] linux-header
+[DEP] m4
 [DEP] meson
 [DEP] ninja
+[DEP] openssl
 [DEP] pixman
+[DEP] pulseaudio
+[DEP] python
 [DEP] scdoc
+[DEP] sed
 [DEP] tar
 [DEP] tllist
 [DEP] udev
 [DEP] utf8proc
 [DEP] wayland
 [DEP] wayland-protocols
-[DEP] xorgproto
-[DEP] zlib

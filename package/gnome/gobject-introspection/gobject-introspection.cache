@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692367950 Fri Aug 18 16:12:30 2023
-[BUILDTIME] 12 (9)
-[SIZE] 13.25 MB, 207 files
+[TIMESTAMP] 1707758673 Mon Feb 12 17:24:33 2024
+[BUILDTIME] 14 (9)
+[SIZE] 13.36 MB, 192 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -12,7 +12,7 @@
 [DEP] findutils
 [DEP] flex
 [DEP] gawk
-[DEP] glib
+[OPT] glib
 [DEP] grep
 [DEP] libffi
 [DEP] linux-header
@@ -20,12 +20,10 @@
 [DEP] make
 [DEP] meson
 [DEP] ninja
+[DEP] openssl
 [DEP] patch
-[DEP] pcre2
 [DEP] pkgconfig
 [DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
 [DEP] xz
-[DEP] zlib

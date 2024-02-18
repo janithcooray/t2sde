@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1695848982 Wed Sep 27 23:09:42 2023
-[BUILDTIME] 30 (9)
-[SIZE] 494.85 MB, 401 files
+[TIMESTAMP] 1707060355 Sun Feb  4 15:25:55 2024
+[BUILDTIME] 80 (9)
+[SIZE] 496.65 MB, 401 files
 
 [DEP] 00-dirtree
+[OPT] asciidoc
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
@@ -19,5 +20,8 @@
 [DEP] openssl
 [DEP] sed
 [DEP] tar
+[OPT] tcl
+[OPT] tk
+[OPT] xmlto
 [DEP] xz
 [DEP] zlib

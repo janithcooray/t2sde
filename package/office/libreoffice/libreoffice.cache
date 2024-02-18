@@ -1,26 +1,24 @@
 
-[TIMESTAMP] 1695917881 Thu Sep 28 18:18:01 2023
-[BUILDTIME] 7950 (9)
-[SIZE] 568.92 MB, 3970 files
+[TIMESTAMP] 1704122767 Mon Jan  1 16:26:07 2024
+[BUILDTIME] 9800 (9)
+[SIZE] 565.13 MB, 3970 files
 
 [DEP] 00-dirtree
 [DEP] at-spi2-core
 [DEP] autoconf
-[DEP] automake
 [DEP] bash
 [DEP] binutils
 [DEP] bison
-[DEP] boost
-[DEP] bzip2
-[DEP] cairo
-[DEP] clang
+[OPT] boost
+[OPT] bzip2
+[OPT] cairo
 [DEP] coreutils
 [DEP] cups
-[DEP] curl
+[OPT] curl
 [DEP] dbus
 [DEP] diffutils
-[DEP] epoxy
-[DEP] expat
+[OPT] epoxy
+[OPT] expat
 [DEP] findutils
 [DEP] flex
 [DEP] fontconfig
@@ -30,22 +28,22 @@
 [DEP] git
 [DEP] glib
 [DEP] gperf
-[DEP] graphite2
+[OPT] graphite2
 [DEP] grep
 [DEP] gtk+
 [DEP] gzip
 [DEP] harfbuzz
-[DEP] lcms2
+[OPT] lcms2
 [DEP] libice
 [DEP] libjpeg
-[DEP] libpng
+[OPT] libpng
 [DEP] libsm
-[DEP] libtiff
+[OPT] libtiff
 [DEP] libx11
 [DEP] libxcb
 [DEP] libxext
 [DEP] libxinerama
-[DEP] libxml
+[OPT] libxml
 [DEP] libxrandr
 [DEP] libxrender
 [DEP] libxslt
@@ -53,22 +51,21 @@
 [DEP] m4
 [DEP] make
 [DEP] mesa
-[DEP] net-tools
 [DEP] nspr
-[DEP] nss
-[DEP] openssl
+[OPT] nss
 [DEP] pango
 [DEP] patch
 [DEP] perl
 [DEP] pixman
 [DEP] python
-[DEP] sane-backends
+[OPT] sane-backends
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] unzip
 [DEP] wayland
+[OPT] xmlsec
 [DEP] xorgproto
-[DEP] xmlsec
 [DEP] xz
 [DEP] zip
-[DEP] zlib
+[OPT] zlib

@@ -53,9 +53,8 @@ CONFIG_FB_XVR1000=y
 # CONFIG_FB_RIVA is not set
 # CONFIG_FB_RADEON is not set
 
-CONFIG_FONT_8x16=y
-CONFIG_FONT_SUN8x16=y
-CONFIG_FONT_SUN12x22=y
+# CONFIG_FONT_SUN8x16 is not set
+# CONFIG_LOGO_SUN_CLUT224 is not set
 
 include(`linux-common.conf.m4')
 include(`linux-block.conf.m4')
@@ -64,6 +63,6 @@ include(`linux-fs.conf.m4')
 
 CONFIG_NR_CPUS=64
 
-dnl LSI Logic / Symbios Logic (formerly NCR) 53c810 (rev 01)
-dnl does not work reliable with MMIO on my Ultra SPARC 5 -ReneR
-# CONFIG_SCSI_SYM53C8XX_IOMAPPED is not set
+dnl w/o DEBUG_PAGEALLOC Sun Blade 1xxx oops w/ 8GB RAM?
+# CONFIG_HIBERNATION is not set
+CONFIG_DEBUG_PAGEALLOC=y

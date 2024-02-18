@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692378450 Fri Aug 18 19:07:30 2023
-[BUILDTIME] 35 (9)
-[SIZE] 1.18 MB, 161 files
+[TIMESTAMP] 1707652713 Sun Feb 11 11:58:33 2024
+[BUILDTIME] 40 (9)
+[SIZE] 1.18 MB, 160 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -23,9 +23,10 @@
 [DEP] linux-header
 [DEP] m4
 [DEP] make
-[DEP] net-tools
+[OPT] openldap
 [DEP] procps
 [DEP] qt5base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz

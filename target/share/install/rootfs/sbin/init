@@ -21,8 +21,8 @@ echo "
 T2 SDE installer second stage.
 
 The second stage is a small Linux distribution, loaded into your system's
-memory. It has everything needed to install T2 Linux, restore an old
-installation, perform maintenance, rescue or backup tasks."
+memory. It has everything needed to install T2 Linux, restore a previous
+installation, or perform maintenance, rescue and backup tasks."
 
 for x in /etc/setup-*.sh /setup/setup.sh; do
    if [ -f "$x" ]; then
@@ -65,7 +65,8 @@ echo "
 	https://t2sde.org/support"
 
 for x in $ttydevs; do
-   ( ( while : ; do agetty -i -J $x -n -N -l /sbin/login-shell; done ) & )
+   [[ "$x" != /dev/tty[0-9]* ]] && TERM=xterm-color
+   ( ( while : ; do agetty -i -J -n -N -l /sbin/login-shell $x $TERM; done ) & )
 done
 
 exec < /dev/null > /dev/null 2>&1

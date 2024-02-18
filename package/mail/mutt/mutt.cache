@@ -1,26 +1,27 @@
 
-[TIMESTAMP] 1684801132 Tue May 23 00:18:52 2023
-[BUILDTIME] 5 (9)
-[SIZE] 8.69 MB, 125 files
+[TIMESTAMP] 1704842726 Wed Jan 10 01:25:26 2024
+[BUILDTIME] 12 (9)
+[SIZE] 8.67 MB, 125 files
 
 [DEP] 00-dirtree
 [DEP] autoconf
 [DEP] automake
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[DEP] docbookx
 [DEP] findutils
 [DEP] gawk
+[DEP] gdbm
 [DEP] git
 [DEP] grep
-[DEP] kyotocabinet
-[DEP] libidn
+[DEP] gzip
+[DEP] libxslt
 [DEP] linux-header
 [DEP] m4
 [DEP] make
 [DEP] ncurses
-[DEP] openssl
+[OPT] openssl
 [DEP] patch
 [DEP] perl
 [DEP] sed

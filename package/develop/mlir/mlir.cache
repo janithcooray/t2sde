@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1684790068 Mon May 22 21:14:28 2023
-[BUILDTIME] 435 (9)
-[SIZE] 601.61 MB, 1700 files
+[TIMESTAMP] 1704025156 Sun Dec 31 13:19:16 2023
+[BUILDTIME] 1500 (9)
+[SIZE] 264.19 MB, 1934 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
@@ -16,9 +17,9 @@
 [DEP] linux-header
 [DEP] llvm
 [DEP] make
-[DEP] ncurses
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz
 [DEP] zlib

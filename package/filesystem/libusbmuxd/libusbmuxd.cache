@@ -1,11 +1,12 @@
 
-[TIMESTAMP] 1690843233 Tue Aug  1 00:40:33 2023
-[BUILDTIME] 1 (9)
-[SIZE] 0.27 MB, 16 files
+[TIMESTAMP] 1703628080 Tue Dec 26 22:01:20 2023
+[BUILDTIME] 3 (9)
+[SIZE] 0.20 MB, 17 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils

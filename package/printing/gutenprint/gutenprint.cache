@@ -1,26 +1,24 @@
 
-[TIMESTAMP] 1691010718 Wed Aug  2 23:11:58 2023
-[BUILDTIME] 8 (9)
-[SIZE] 41.97 MB, 457 files
+[TIMESTAMP] 1704019258 Sun Dec 31 11:40:58 2023
+[BUILDTIME] 20 (9)
+[SIZE] 42.00 MB, 458 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
-[DEP] cups
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
 [DEP] glib
+[DEP] glib12
 [DEP] grep
 [DEP] gtk+2
 [DEP] libusb
 [DEP] linux-header
 [DEP] make
-[DEP] ncurses
-[DEP] openssl
 [DEP] readline
 [DEP] sed
 [DEP] tar
-[DEP] upower
+[DEP] xz
 [DEP] zlib

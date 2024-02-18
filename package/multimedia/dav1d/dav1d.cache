@@ -1,6 +1,6 @@
 
-[TIMESTAMP] 1691007642 Wed Aug  2 22:20:42 2023
-[BUILDTIME] 15 (9)
+[TIMESTAMP] 1707060588 Sun Feb  4 15:29:48 2024
+[BUILDTIME] 40 (9)
 [SIZE] 1.68 MB, 17 files
 
 [DEP] 00-dirtree
@@ -13,10 +13,11 @@
 [DEP] git
 [DEP] grep
 [DEP] linux-header
-[DEP] make
 [DEP] meson
 [DEP] nasm
 [DEP] ninja
+[DEP] openssl
 [DEP] sed
 [DEP] tar
 [DEP] xxhash
+[DEP] xz

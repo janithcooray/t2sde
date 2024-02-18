@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1666109625 Tue Oct 18 18:13:45 2022
-[BUILDTIME] 5 (9)
-[SIZE] 0.10 MB, 7 files
+[TIMESTAMP] 1707773806 Mon Feb 12 21:36:46 2024
+[BUILDTIME] 4 (9)
+[SIZE] 0.10 MB, 6 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
@@ -11,7 +12,9 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] gzip
 [DEP] linux-header
 [DEP] make
 [DEP] sed
 [DEP] tar
+[DEP] tbb

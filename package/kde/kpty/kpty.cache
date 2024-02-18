@@ -1,29 +1,28 @@
 
-[TIMESTAMP] 1684691335 Sun May 21 17:48:55 2023
-[BUILDTIME] 0 (9)
+[TIMESTAMP] 1707652694 Sun Feb 11 11:58:14 2024
+[BUILDTIME] 4 (9)
 [SIZE] 0.23 MB, 125 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
-[DEP] dbus
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
 [DEP] gettext
-[DEP] glib
 [DEP] grep
-[DEP] icu4c
+[DEP] kconfig
 [DEP] kcoreaddons
 [DEP] kde-extra-cmake-modules
 [DEP] ki18n
 [DEP] linux-header
 [DEP] make
-[DEP] pcre2
+[OPT] openldap
 [DEP] procps
 [DEP] qt5base
 [DEP] sed
 [DEP] tar
-[DEP] udev
-[DEP] zlib
+[DEP] tbb
+[DEP] xz

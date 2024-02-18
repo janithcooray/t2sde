@@ -30,10 +30,10 @@
 
 [L] GPL
 [S] Stable
-[V] 2.6.6
+[V] 2.6.8
 [P] X -----5---9 186.700
 
 [O] var_append confopt ' ' '--enable-iproute2 --enable-x509-alt-username'
 [O] pkginstalled lzo || var_append extraconfopt ' ' '--disable-lzo'
 
-[D] 02fc5f67887a72df3c0986a8e0cf653f65feb3cfb5daee01599652c4 openvpn-2.6.6.tar.gz https://build.openvpn.net/downloads/releases/
+[D] 21d4b08af25c2390c9609cc8d01e0f15407d3abd06b396ef7e0e3aa9 openvpn-2.6.8.tar.gz https://build.openvpn.net/downloads/releases/

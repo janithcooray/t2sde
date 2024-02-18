@@ -1,22 +1,25 @@
 
-[TIMESTAMP] 1692376647 Fri Aug 18 18:37:27 2023
+[TIMESTAMP] 1707669632 Sun Feb 11 16:40:32 2024
 [BUILDTIME] 8 (9)
-[SIZE] 2.95 MB, 220 files
+[SIZE] 2.98 MB, 220 files
 
 [DEP] 00-dirtree
 [DEP] alsa-lib
+[DEP] audiofile
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
+[OPT] esound
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
+[OPT] libspe
 [DEP] linux-header
 [DEP] make
 [DEP] patch
-[DEP] pulseaudio
+[OPT] pulseaudio
 [DEP] sed
 [DEP] tar
 [DEP] tslib

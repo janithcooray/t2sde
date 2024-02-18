@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692741013 Tue Aug 22 23:50:13 2023
+[TIMESTAMP] 1707758970 Mon Feb 12 17:29:30 2024
 [BUILDTIME] 6 (9)
-[SIZE] 3.21 MB, 177 files
+[SIZE] 3.21 MB, 176 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -14,27 +14,21 @@
 [DEP] gawk
 [DEP] gettext
 [DEP] git
-[DEP] glib
-[DEP] gobject-introspection
+[OPT] glib
+[OPT] gobject-introspection
 [DEP] grep
-[DEP] libffi
+[DEP] libgsf
 [DEP] libjpeg
 [DEP] libpng
-[DEP] libtiff
-[DEP] libwebp
+[OPT] libtiff
 [DEP] linux-header
 [DEP] make
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
 [DEP] openssl
-[DEP] pcre2
 [DEP] pkgconfig
 [DEP] python
+[OPT] rst2man
 [DEP] sed
-[DEP] shared-mime-info
 [DEP] tar
-[DEP] util-linux
 [DEP] xz
-[DEP] zlib
-[DEP] zstd

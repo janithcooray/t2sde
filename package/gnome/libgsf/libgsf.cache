@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695851382 Wed Sep 27 23:49:42 2023
-[BUILDTIME] 4 (9)
-[SIZE] 3.48 MB, 155 files
+[TIMESTAMP] 1707758961 Mon Feb 12 17:29:21 2024
+[BUILDTIME] 10 (9)
+[SIZE] 3.50 MB, 158 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -12,11 +12,10 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] gdk-pixbuf
-[DEP] glib
-[DEP] gobject-introspection
+[OPT] glib
 [DEP] grep
-[DEP] libgtop
-[DEP] librsvg
+[DEP] libsecret
+[DEP] libxklavier
 [DEP] libxml
 [DEP] linux-header
 [DEP] make

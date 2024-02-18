@@ -30,11 +30,12 @@
 [M] Rene Rebe <rene@2-project.org>
 
 [C] extra/server
+[F] NO-LTO
 
 [L] GPL
 [S] Stable
-[V] 4.18.6
+[V] 4.19.3
 [P] X -----5---9 130.500
 
 [CV-FLAGS] ODD-STABLE
-[D] c3fbad220367897f9d012dcaaad5e5deac6bb42caccc840a36b1f0e5 samba-4.18.6.tar.gz http://ftp.samba.org/samba/ftp/stable/
+[D] 69734fd595d66b2805556e4fc2f5f3c317354ff9f9ca06d762b893e3 samba-4.19.3.tar.gz https://download.samba.org/pub/samba/stable/

@@ -23,10 +23,10 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.2
+[V] 23.08.4
 [P] X -----5---9 162.420
 
 [O] . $base/package/*/*/kde-conf.in
 
 [CV-FLAGS] ODD-STABLE
-[D] 12d9a539c3b6eea3ba38cb7cfd0bb947a2ea4cf4839ef7b521db9895 calendarsupport-23.08.2.tar.xz https://download.kde.org/stable/release-service/23.08.2/src/
+[D] 8c39c08bcbddccfe5f6accd25de66bb25b081ddb8141140375f29800 calendarsupport-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/

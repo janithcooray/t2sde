@@ -1,23 +1,23 @@
 
-[TIMESTAMP] 1690847464 Tue Aug  1 01:51:04 2023
-[BUILDTIME] 1 (9)
-[SIZE] 0.73 MB, 15 files
+[TIMESTAMP] 1707068810 Sun Feb  4 17:46:50 2024
+[BUILDTIME] 3 (9)
+[SIZE] 0.74 MB, 15 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] bison
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] flex
 [DEP] gawk
-[DEP] glib
+[OPT] glib
 [DEP] glib12
 [DEP] grep
 [DEP] linux-header
 [DEP] m4
 [DEP] make
-[DEP] pcre2
 [DEP] sed
 [DEP] tar

@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695742837 Tue Sep 26 17:40:37 2023
-[BUILDTIME] 3850 (9)
-[SIZE] 55.71 MB, 2913 files
+[TIMESTAMP] 1707569017 Sat Feb 10 12:43:37 2024
+[BUILDTIME] 5150 (9)
+[SIZE] 61.18 MB, 2802 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -11,13 +11,14 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[DEP] icu4c
+[OPT] icu4c
 [DEP] linux-header
 [DEP] make
-[DEP] openssl
+[OPT] openssl
 [DEP] pkgconfig
 [DEP] python
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz
-[DEP] zlib
+[OPT] zlib

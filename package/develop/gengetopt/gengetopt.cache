@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1684755700 Mon May 22 11:41:40 2023
-[BUILDTIME] 5 (9)
-[SIZE] 1.02 MB, 37 files
+[TIMESTAMP] 1707773918 Mon Feb 12 21:38:38 2024
+[BUILDTIME] 14 (9)
+[SIZE] 1.08 MB, 37 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
@@ -15,4 +16,6 @@
 [DEP] perl
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] texinfo
+[DEP] xz

@@ -1,6 +1,6 @@
 
-[TIMESTAMP] 1690849101 Tue Aug  1 02:18:21 2023
-[BUILDTIME] 1 (9)
+[TIMESTAMP] 1703765082 Thu Dec 28 12:04:42 2023
+[BUILDTIME] 2 (9)
 [SIZE] 0.55 MB, 85 files
 
 [DEP] 00-dirtree
@@ -10,11 +10,7 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[DEP] itstool
-[DEP] libpwquality
-[DEP] pexpect
-[DEP] ptyprocess
-[DEP] pycups
+[DEP] gzip
 [DEP] python
 [DEP] sed
 [DEP] setuptools

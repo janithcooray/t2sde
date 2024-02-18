@@ -26,9 +26,10 @@
 
 [L] OpenSource
 [S] Stable
-[V] 23.2.0
+[V] 23.2.3
 [P] X -----5---9 148.000
 
 [O] . package/*/*/modular-x-conf.in
+[O] var_append mesonopt ' ' '-Dserverconfigdir=xwayland'
 
-[D] df1975593b37e0a36037255c95b641ac22ebd94170cad5a82af17a28 xwayland-23.2.0.tar.xz https://xorg.freedesktop.org/archive/individual/xserver/
+[D] a7f229da181b83234b0bce9afa77d9b81f34235613d4e2af2b6a8280 xwayland-23.2.3.tar.xz https://xorg.freedesktop.org/archive/individual/xserver/

@@ -1,43 +1,21 @@
 
-[TIMESTAMP] 1697734506 Thu Oct 19 18:55:06 2023
-[BUILDTIME] 100 (9)
-[SIZE] 76.39 MB, 2817 files
+[TIMESTAMP] 1707567537 Sat Feb 10 12:18:57 2024
+[BUILDTIME] 110 (9)
+[SIZE] 83.64 MB, 2826 files
 
 [DEP] 00-dirtree
-[DEP] alsa-lib
-[DEP] apr
-[DEP] apr-util
 [DEP] bash
 [DEP] binutils
 [DEP] bluez
-[DEP] btrfs-progs
 [DEP] bzip2
 [DEP] coreutils
-[DEP] cryptsetup
-[DEP] dialog
 [DEP] diffutils
-[DEP] dtc
-[DEP] e2fsprogs
-[DEP] expat
-[DEP] file
 [DEP] findutils
-[DEP] flex
 [DEP] gawk
 [DEP] gdbm
-[DEP] gettext
-[DEP] gmp
 [DEP] grep
-[DEP] inih
-[DEP] iptables
-[DEP] keyutils
-[DEP] kmod
-[DEP] lcms2
-[DEP] libaio
-[DEP] libatomic_ops
-[DEP] libedit
-[DEP] libelf
-[DEP] libevent
 [DEP] libffi
+[DEP] libxcrypt
 [DEP] linux-header
 [DEP] make
 [DEP] ncurses
@@ -45,8 +23,8 @@
 [DEP] patch
 [DEP] readline
 [DEP] sed
-[DEP] setuptools
 [DEP] sqlite
+[DEP] sysfiles
 [DEP] tar
 [DEP] util-linux
 [DEP] xz

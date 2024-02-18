@@ -1,33 +1,31 @@
 
-[TIMESTAMP] 1684619667 Sat May 20 23:54:27 2023
-[BUILDTIME] 5 (9)
-[SIZE] 1.91 MB, 199 files
+[TIMESTAMP] 1707069111 Sun Feb  4 17:51:51 2024
+[BUILDTIME] 14 (9)
+[SIZE] 1.92 MB, 199 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] cups
 [DEP] diffutils
-[DEP] expat
 [DEP] findutils
 [DEP] fontconfig
 [DEP] freetype
-[DEP] fribidi
 [DEP] gawk
 [DEP] git
 [DEP] glib
 [DEP] grep
+[DEP] gzip
 [DEP] harfbuzz
-[DEP] libffi
+[DEP] imlib2
 [DEP] libice
-[DEP] libpng
 [DEP] libsm
 [DEP] libx11
 [DEP] libxau
 [DEP] libxcb
 [DEP] libxcursor
 [DEP] libxext
-[DEP] libxfixes
 [DEP] libxft
 [DEP] libxinerama
 [DEP] libxml
@@ -36,13 +34,8 @@
 [DEP] linux-header
 [DEP] make
 [DEP] pango
-[DEP] pcre2
-[DEP] pulseaudio
 [DEP] sed
 [DEP] startup-notification
 [DEP] tar
-[DEP] util-linux
-[DEP] xcb-util
 [DEP] xfce4-session
 [DEP] xorgproto
-[DEP] zlib

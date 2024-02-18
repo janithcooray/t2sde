@@ -1,16 +1,18 @@
 
-[TIMESTAMP] 1692379260 Fri Aug 18 19:21:00 2023
-[BUILDTIME] 220 (9)
-[SIZE] 14.27 MB, 78 files
+[TIMESTAMP] 1703511056 Mon Dec 25 13:30:56 2023
+[BUILDTIME] 300 (9)
+[SIZE] 14.70 MB, 102 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[DEP] expat
+[OPT] expat
+[DEP] file
 [DEP] findutils
 [DEP] gawk
+[DEP] gettext
 [DEP] gmp
 [DEP] grep
 [DEP] libelf

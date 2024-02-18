@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1691003728 Wed Aug  2 21:15:28 2023
-[BUILDTIME] 20 (9)
-[SIZE] 8.49 MB, 359 files
+[TIMESTAMP] 1703628169 Tue Dec 26 22:02:49 2023
+[BUILDTIME] 35 (9)
+[SIZE] 8.47 MB, 351 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -13,13 +13,13 @@
 [DEP] gawk
 [DEP] grep
 [DEP] groff
+[DEP] gzip
 [DEP] linux-header
 [DEP] m4
 [DEP] make
-[DEP] net-tools
 [DEP] openssl
 [DEP] sed
 [DEP] sysfiles
 [DEP] tar
-[DEP] tcp_wrappers
+[OPT] tcp_wrappers
 [DEP] util-linux

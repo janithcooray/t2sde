@@ -1,10 +1,12 @@
 
-[TIMESTAMP] 1654879482 Fri Jun 10 18:44:42 2022
-[BUILDTIME] 100 (9)
-[SIZE] 0.32 MB, 35 files
+[TIMESTAMP] 1706543383 Mon Jan 29 16:49:43 2024
+[BUILDTIME] 4 (9)
+[SIZE] 0.38 MB, 45 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
@@ -13,7 +15,9 @@
 [DEP] linux-header
 [DEP] make
 [DEP] perl
+[DEP] pkgconfig
 [DEP] qt6base
-[DEP] qt6websockets
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] xz

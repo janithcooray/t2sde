@@ -1,20 +1,23 @@
 
-[TIMESTAMP] 1690844992 Tue Aug  1 01:09:52 2023
-[BUILDTIME] 2 (9)
-[SIZE] 0.16 MB, 17 files
+[TIMESTAMP] 1707068394 Sun Feb  4 17:39:54 2024
+[BUILDTIME] 4 (9)
+[SIZE] 0.17 MB, 16 files
 
 [DEP] 00-dirtree
+[DEP] audiofile
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
+[DEP] esound
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
+[DEP] gzip
 [DEP] libid3tag
 [DEP] libmad
 [DEP] linux-header
 [DEP] make
 [DEP] sed
 [DEP] tar
-[DEP] zlib

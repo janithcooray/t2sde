@@ -24,7 +24,7 @@
 
 [L] BSD
 [S] Stable
-[V] 17.0.1
+[V] 17.0.6
 [P] O -1---5---9 102.700
 
-[D] 22f131eff17b68d40b9a2df3d98af44170ada66bf2fb2e92e26cad7c libcxxabi-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
+[D] fd5c0b11aa2a86da6adf09b24ed8dba5b112849d28fa321d675c3e69 libcxxabi-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/

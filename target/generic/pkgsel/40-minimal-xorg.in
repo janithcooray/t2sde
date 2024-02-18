@@ -34,6 +34,7 @@ X intltool
 X xorgproto
 X fontcacheproto
 X xcb-proto
+X spice-protocol
 X xorg/*ext
 = xorg/*lib*
 O intel-gmmlib
@@ -44,7 +45,7 @@ O libxprintutil
 O libxprintapputil
 O libdmx
 O liboldx
-O libxinerama
+X libxinerama
 X xorg-util-macros
 X xcb-util
 X xcb-util-keysyms
@@ -113,7 +114,6 @@ X xev
 
 X brotli
 X freetype
-X lesstif
 X libjpeg
 # libjpeg-turbo
 X libpng
@@ -126,9 +126,11 @@ X twm
 X xterm
 
 # basic audio i/o
+X libsamplerate
 X alsa-lib
 X alsa-utils
 X alsa-firmware
+X alsa-ucm-conf
 
 # some more network stuff
 X libical

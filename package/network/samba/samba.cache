@@ -1,40 +1,38 @@
 
-[TIMESTAMP] 1692640818 Mon Aug 21 20:00:18 2023
-[BUILDTIME] 500 (9)
-[SIZE] 69.29 MB, 1182 files
+[TIMESTAMP] 1703422797 Sun Dec 24 12:59:57 2023
+[BUILDTIME] 520 (9)
+[SIZE] 68.99 MB, 1101 files
 
 [DEP] 00-dirtree
-[DEP] acl
+[OPT] acl
 [DEP] bash
 [DEP] binutils
 [DEP] bison
 [DEP] coreutils
-[DEP] cups
+[OPT] cups
 [DEP] dbus
 [DEP] diffutils
-[DEP] docbookx
 [DEP] file
 [DEP] findutils
 [DEP] flex
+[DEP] fuse2
 [DEP] gawk
 [DEP] glib
 [DEP] gnutls
 [DEP] grep
 [DEP] gzip
 [DEP] icu4c
-[DEP] libarchive
+[DEP] keyutils
 [DEP] libcap
 [DEP] libtasn1
 [DEP] libtirpc
-[DEP] libxslt
 [DEP] linux-header
 [DEP] m4
 [DEP] make
 [DEP] ncurses
-[DEP] pam
+[OPT] pam
 [DEP] patch
 [DEP] perl
-[DEP] perl-json
 [DEP] perl-parse-yapp
 [DEP] popt
 [DEP] python

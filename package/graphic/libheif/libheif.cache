@@ -1,22 +1,29 @@
 
-[TIMESTAMP] 1684616602 Sat May 20 23:03:22 2023
-[BUILDTIME] 5 (9)
-[SIZE] 6.64 MB, 29 files
+[TIMESTAMP] 1707060574 Sun Feb  4 15:29:34 2024
+[BUILDTIME] 25 (9)
+[SIZE] 1.23 MB, 35 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
+[DEP] doxygen
 [DEP] findutils
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] glib
 [DEP] grep
+[DEP] gzip
+[DEP] libde265
 [DEP] libjpeg
 [DEP] libpng
+[DEP] libwebp
+[DEP] libxml
 [DEP] linux-header
 [DEP] make
+[DEP] pkgconfig
 [DEP] sed
-[DEP] shared-mime-info
 [DEP] tar
 [DEP] zlib

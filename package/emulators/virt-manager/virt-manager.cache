@@ -1,22 +1,27 @@
 
-[TIMESTAMP] 1693130823 Sun Aug 27 12:07:03 2023
+[TIMESTAMP] 1705351618 Mon Jan 15 21:46:58 2024
 [BUILDTIME] 2 (9)
-[SIZE] 7.08 MB, 297 files
+[SIZE] 7.08 MB, 296 files
 
 [DEP] 00-dirtree
 [DEP] bash
+[DEP] confy
 [DEP] coreutils
+[DEP] curtail
 [DEP] diffutils
 [DEP] docutils
+[DEP] eartag
 [DEP] findutils
-[DEP] fontconfig
 [DEP] gawk
+[DEP] gettext
 [DEP] glib
 [DEP] grep
 [DEP] gtk+
 [DEP] gzip
+[DEP] libmateweather
 [DEP] python
 [DEP] sed
 [DEP] setuptools
 [DEP] shared-mime-info
 [DEP] tar
+[DEP] yad

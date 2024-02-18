@@ -1,25 +1,23 @@
 
-[TIMESTAMP] 1684795399 Mon May 22 22:43:19 2023
-[BUILDTIME] 5 (9)
-[SIZE] 4.23 MB, 100 files
+[TIMESTAMP] 1707068838 Sun Feb  4 17:47:18 2024
+[BUILDTIME] 12 (9)
+[SIZE] 2.72 MB, 99 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
-[DEP] glib
+[OPT] glib
 [DEP] grep
-[DEP] gtk-doc
-[DEP] libcanberra
-[DEP] libffi
 [DEP] libidl
+[DEP] libxklavier
 [DEP] linux-header
 [DEP] make
+[OPT] openssl
 [DEP] orbit10
-[DEP] pcre2
-[DEP] pkgconfig
-[DEP] python
 [DEP] sed
 [DEP] tar

@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1696689056 Sat Oct  7 16:30:56 2023
-[BUILDTIME] 105 (9)
-[SIZE] 31.73 MB, 2830 files
+[TIMESTAMP] 1707664694 Sun Feb 11 15:18:14 2024
+[BUILDTIME] 700 (9)
+[SIZE] 32.52 MB, 2843 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -14,15 +14,16 @@
 [DEP] gmp
 [DEP] grep
 [DEP] libffi
+[DEP] libxcrypt
 [DEP] libyaml
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
 [DEP] openssl
 [DEP] pkgconfig
 [DEP] readline
 [DEP] rustc
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xz
 [DEP] zlib

@@ -1,25 +1,23 @@
 
-[TIMESTAMP] 1692377277 Fri Aug 18 18:47:57 2023
+[TIMESTAMP] 1707061452 Sun Feb  4 15:44:12 2024
 [BUILDTIME] 10 (9)
-[SIZE] 3.45 MB, 83 files
+[SIZE] 3.08 MB, 83 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] bzip2
-[DEP] cairo
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] freetype
 [DEP] gawk
-[DEP] gdk-pixbuf
-[DEP] glib
 [DEP] grep
 [DEP] libgif
+[DEP] libheif
+[DEP] libid3tag
 [DEP] libjpeg
 [DEP] libpng
-[DEP] librsvg
 [DEP] libtiff
 [DEP] libwebp
 [DEP] libx11

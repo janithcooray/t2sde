@@ -1,11 +1,14 @@
 
-[TIMESTAMP] 1616622604 Wed Mar 24 22:50:04 2021
-[BUILDTIME] 100 (9)
-[SIZE] 0.69 MB, 37 files
+[TIMESTAMP] 1704022689 Sun Dec 31 12:38:09 2023
+[BUILDTIME] 8 (9)
+[SIZE] 0.93 MB, 52 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] cmake
 [DEP] coreutils
+[DEP] curl
 [DEP] diffutils
 [DEP] docbookx
 [DEP] findutils
@@ -13,26 +16,18 @@
 [DEP] glib
 [DEP] gobject-introspection
 [DEP] grep
-[DEP] gssdp
-[DEP] icu4c
-[DEP] imagemagick
 [DEP] libcanberra
-[DEP] libffi
-[DEP] libpsl
-[DEP] libsoup
+[DEP] libsoup3
 [DEP] libxml
 [DEP] libxslt
 [DEP] linux-header
 [DEP] make
 [DEP] meson
 [DEP] ninja
-[DEP] pcre2
+[DEP] openssl
 [DEP] pkgconfig
 [DEP] python
 [DEP] sed
-[DEP] sqlite
 [DEP] tar
-[DEP] util-linux
 [DEP] vala
 [DEP] xz
-[DEP] zlib

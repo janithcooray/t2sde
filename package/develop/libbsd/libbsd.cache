@@ -1,19 +1,19 @@
 
-[TIMESTAMP] 1528134627 Mon Jun  4 19:50:27 2018
-[BUILDTIME] 100 (9) ERROR
-[SIZE] 0.72 MB, 259 files
+[TIMESTAMP] 1701515024 Sat Dec  2 12:03:44 2023
+[BUILDTIME] 6 (9)
+[SIZE] 0.79 MB, 282 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[DEP] file
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[DEP] isl
+[DEP] libmd
 [DEP] linux-header
 [DEP] make
 [DEP] sed
-[DEP] sysfiles
 [DEP] tar
+[DEP] xz

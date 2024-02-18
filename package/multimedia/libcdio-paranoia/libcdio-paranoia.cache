@@ -1,15 +1,18 @@
 
-[TIMESTAMP] 1684617691 Sat May 20 23:21:31 2023
-[BUILDTIME] 0 (9)
+[TIMESTAMP] 1707061413 Sun Feb  4 15:43:33 2024
+[BUILDTIME] 4 (9)
 [SIZE] 0.48 MB, 25 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[OPT] cdparanoia
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] gzip
 [DEP] libcdio
 [DEP] linux-header
 [DEP] make

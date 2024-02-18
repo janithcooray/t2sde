@@ -29,8 +29,8 @@
 
 [L] BSD
 [S] Stable
-[V] 17.0.1
+[V] 17.0.6
 [P] O -1---5---9 102.350
 
-[D] a9e2c145ac28d41f902a38e70632f1a04a6e681b8f9d917953afa37a libunwind-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
-[D] 3a7c9500f26572696dbfdf81c48ce3b0c3ac1cb6d6ab599aed05694f llvm-cmake-17.0.1.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/cmake-17.0.1.src.tar.xz
+[D] b5af170af476d86bea19be708bd881405c08542286440216b4bd0cc4 libunwind-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/
+[D] cdaa08327604050753df5612ac834ef39172e7b9c24b66d7d5f8a208 llvm-cmake-17.0.6.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/cmake-17.0.6.src.tar.xz

@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1654880242 Fri Jun 10 18:57:22 2022
-[BUILDTIME] 100 (9)
-[SIZE] 0.23 MB, 43 files
+[TIMESTAMP] 1706543280 Mon Jan 29 16:48:00 2024
+[BUILDTIME] 3 (9)
+[SIZE] 0.39 MB, 53 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
@@ -11,7 +12,6 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[DEP] libxml
 [DEP] linux-header
 [DEP] make
 [DEP] perl
@@ -19,5 +19,7 @@
 [DEP] qt6base
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] udev
-[DEP] xkbcommon
+[DEP] vulkan-headers
+[DEP] xz

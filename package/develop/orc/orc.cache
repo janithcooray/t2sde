@@ -1,25 +1,22 @@
 
-[TIMESTAMP] 1684790482 Mon May 22 21:21:22 2023
-[BUILDTIME] 0 (9)
-[SIZE] 1.38 MB, 92 files
+[TIMESTAMP] 1707061641 Sun Feb  4 15:47:21 2024
+[BUILDTIME] 6 (9)
+[SIZE] 1.12 MB, 56 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
-[DEP] docbookx
 [DEP] findutils
 [DEP] gawk
-[DEP] glib
 [DEP] grep
-[DEP] gtk-doc
 [DEP] libxml
-[DEP] libxslt
 [DEP] linux-header
 [DEP] make
 [DEP] meson
 [DEP] ninja
-[DEP] pkgconfig
-[DEP] python
+[DEP] openssl
 [DEP] sed
 [DEP] tar
+[DEP] xz

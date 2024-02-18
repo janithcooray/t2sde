@@ -1,40 +1,33 @@
 
-[TIMESTAMP] 1690109737 Sun Jul 23 12:55:37 2023
-[BUILDTIME] 0 (9)
+[TIMESTAMP] 1707758750 Mon Feb 12 17:25:50 2024
+[BUILDTIME] 4 (9)
 [SIZE] 0.45 MB, 43 files
 
 [DEP] 00-dirtree
-[DEP] alsa-lib
+[DEP] bash
 [DEP] binutils
+[OPT] boost
 [DEP] cairo
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] e2fsprogs
-[DEP] expat
 [DEP] findutils
 [DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
-[DEP] glib
+[DEP] git
 [DEP] grep
-[DEP] libffi
-[DEP] libpng
 [DEP] libsigc++
 [DEP] libx11
-[DEP] libxau
-[DEP] libxcb
-[DEP] libxext
 [DEP] libxrender
 [DEP] linux-header
 [DEP] make
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
-[DEP] pcre2
-[DEP] pixman
+[DEP] openssl
 [DEP] python
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xorgproto
-[DEP] zlib
+[DEP] xz

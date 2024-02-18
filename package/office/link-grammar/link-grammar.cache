@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1690848943 Tue Aug  1 02:15:43 2023
-[BUILDTIME] 5 (9)
-[SIZE] 15.29 MB, 506 files
+[TIMESTAMP] 1703960130 Sat Dec 30 19:15:30 2023
+[BUILDTIME] 12 (9)
+[SIZE] 15.30 MB, 506 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -11,13 +11,12 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
+[DEP] gzip
 [DEP] hunspell
 [DEP] libedit
 [DEP] linux-header
 [DEP] make
-[DEP] ncurses
 [DEP] pcre2
 [DEP] sed
 [DEP] sqlite
 [DEP] tar
-[DEP] zlib

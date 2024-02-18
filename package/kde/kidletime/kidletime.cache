@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1690849168 Tue Aug  1 02:19:28 2023
-[BUILDTIME] 3 (9)
-[SIZE] 0.17 MB, 33 files
+[TIMESTAMP] 1707664494 Sun Feb 11 15:14:54 2024
+[BUILDTIME] 8 (9)
+[SIZE] 0.21 MB, 27 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -9,40 +9,33 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] expat
 [DEP] findutils
-[DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
-[DEP] glib
+[DEP] git
 [DEP] grep
-[DEP] harfbuzz
-[DEP] icu4c
+[DEP] kconfig
 [DEP] kde-extra-cmake-modules
-[DEP] libdrm
-[DEP] libice
-[DEP] libkdcraw
-[DEP] libpng
-[DEP] libsm
+[DEP] ki18n
 [DEP] libx11
-[DEP] libxau
 [DEP] libxcb
 [DEP] libxext
-[DEP] libxfixes
 [DEP] libxscrnsaver
-[DEP] libxshmfence
-[DEP] libxxf86vm
 [DEP] linux-header
 [DEP] make
-[DEP] mesa
-[DEP] net-tools
-[DEP] pcre2
+[OPT] openldap
 [DEP] pkgconfig
+[DEP] plasma-wayland-protocols
 [DEP] qt5base
 [DEP] qt5imageformats
 [DEP] qt5svg
+[DEP] qt5virtualkeyboard
+[DEP] qt5wayland
 [DEP] qt5x11extras
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] wayland
+[DEP] wayland-protocols
 [DEP] xorgproto
-[DEP] zlib
+[DEP] xz

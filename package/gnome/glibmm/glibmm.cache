@@ -1,29 +1,27 @@
 
-[TIMESTAMP] 1690111155 Sun Jul 23 13:19:15 2023
-[BUILDTIME] 45 (9)
-[SIZE] 6.46 MB, 460 files
+[TIMESTAMP] 1707758791 Mon Feb 12 17:26:31 2024
+[BUILDTIME] 115 (9)
+[SIZE] 6.59 MB, 465 files
 
 [DEP] 00-dirtree
-[DEP] alsa-lib
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] e2fsprogs
 [DEP] findutils
 [DEP] gawk
-[DEP] glib
+[DEP] git
+[OPT] glib
 [DEP] grep
-[DEP] libffi
 [DEP] libsigc++
 [DEP] linux-header
 [DEP] make
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
-[DEP] pcre2
+[DEP] openssl
 [DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] util-linux
-[DEP] zlib
+[DEP] tbb
+[DEP] xz

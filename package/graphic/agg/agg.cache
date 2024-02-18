@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692378935 Fri Aug 18 19:15:35 2023
-[BUILDTIME] 8 (9)
-[SIZE] 3.39 MB, 160 files
+[TIMESTAMP] 1704027612 Sun Dec 31 14:00:12 2023
+[BUILDTIME] 12 (9)
+[SIZE] 3.60 MB, 164 files
 
 [DEP] 00-dirtree
 [DEP] autoconf
@@ -17,6 +17,7 @@
 [DEP] gzip
 [DEP] libsdl
 [DEP] libtool
+[DEP] libx11
 [DEP] libxml
 [DEP] linux-header
 [DEP] m4
@@ -25,3 +26,5 @@
 [DEP] perl
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] xorgproto

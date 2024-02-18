@@ -25,11 +25,10 @@
 
 [L] BSD MIT
 [S] Stable
-[V] 17.0.1
+[V] 17.0.6
 [P] X -----5---9 152.700
 
-[D] e351f4666af77f798960ec13c038dcbd123b3580c7c96323034b7653 libcxx-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
-[D] 22f131eff17b68d40b9a2df3d98af44170ada66bf2fb2e92e26cad7c libcxxabi-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
-[D] 3a7c9500f26572696dbfdf81c48ce3b0c3ac1cb6d6ab599aed05694f llvm-cmake-17.0.1.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/cmake-17.0.1.src.tar.xz
-[D] 8f9497db63b4e9ff51c6e4d972053a867f1745064bc5d3262b7d28cc HandleFlags.cmake https://raw.githubusercontent.com/llvm/llvm-project/main/runtimes/cmake/Modules/
-[D] b7e405083b4dc64fe29e883b8d9092ffc4f70ff708b1a56fd6960e18 WarningFlags.cmake https://raw.githubusercontent.com/llvm/llvm-project/main/runtimes/cmake/Modules/
+[D] a90561662aa6023ea94b067e8451fd0a14997a18bac7b5533adaf418 libcxx-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/
+[D] fd5c0b11aa2a86da6adf09b24ed8dba5b112849d28fa321d675c3e69 libcxxabi-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/
+[D] cdaa08327604050753df5612ac834ef39172e7b9c24b66d7d5f8a208 llvm-cmake-17.0.6.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/cmake-17.0.6.src.tar.xz
+[D] 77866eee1457edf6f0b2a16999223a6a4e435967f08be72ac3f15798 llvm-runtimes-17.0.6.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/runtimes-17.0.6.src.tar.xz

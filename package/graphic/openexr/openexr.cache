@@ -1,9 +1,10 @@
 
-[TIMESTAMP] 1690125655 Sun Jul 23 17:20:55 2023
-[BUILDTIME] 70 (9)
-[SIZE] 7.99 MB, 244 files
+[TIMESTAMP] 1704842969 Wed Jan 10 01:29:29 2024
+[BUILDTIME] 110 (9)
+[SIZE] 8.12 MB, 254 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
@@ -14,11 +15,14 @@
 [DEP] gettext
 [DEP] git
 [DEP] grep
+[DEP] gzip
+[DEP] libdeflate
 [DEP] libxml
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
 [DEP] openssl
+[DEP] pkgconfig
+[DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] zlib
+[DEP] tbb

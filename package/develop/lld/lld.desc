@@ -25,13 +25,13 @@
 [M] Rene Rebe <rene@t2-project.org>
 
 [C] extra/development
-[F] OBJDIR CROSS LATOMIC.sparc64
+[F] OBJDIR CROSS LATOMIC.sparc64 NO-LTO.gcc
 [R] - alpha arc avr32 alpha blackfin m68k microblaze nios2
 
 [L] BSD
 [S] Stable
-[V] 17.0.1
+[V] 17.0.6
 [P] X ?----5---9 102.620
 
-[D] 82980e0e82707589862f1980666fda9022d959f682235818ff886915 lld-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
-[D] 3a7c9500f26572696dbfdf81c48ce3b0c3ac1cb6d6ab599aed05694f llvm-cmake-17.0.1.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/cmake-17.0.1.src.tar.xz
+[D] 6ce4f04ffa6576e4a4e35519f86c8d1960565239acbf2a0e09494629 lld-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/
+[D] cdaa08327604050753df5612ac834ef39172e7b9c24b66d7d5f8a208 llvm-cmake-17.0.6.src.tar.xz !https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/cmake-17.0.6.src.tar.xz

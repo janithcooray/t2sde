@@ -1,18 +1,20 @@
 
-[TIMESTAMP] 1695849543 Wed Sep 27 23:19:03 2023
-[BUILDTIME] 2 (9)
-[SIZE] 3.91 MB, 102 files
+[TIMESTAMP] 1707061584 Sun Feb  4 15:46:24 2024
+[BUILDTIME] 6 (9)
+[SIZE] 4.59 MB, 153 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
 [DEP] coreutils
 [DEP] diffutils
+[DEP] doxygen
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
 [DEP] libogg
 [DEP] libpng
+[DEP] libsdl
 [DEP] libvorbis
 [DEP] linux-header
 [DEP] make

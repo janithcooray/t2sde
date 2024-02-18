@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692378155 Fri Aug 18 19:02:35 2023
-[BUILDTIME] 120 (9)
-[SIZE] 14.78 MB, 217 files
+[TIMESTAMP] 1707778376 Mon Feb 12 22:52:56 2024
+[BUILDTIME] 160 (9)
+[SIZE] 14.85 MB, 217 files
 
 [DEP] 00-dirtree
 [DEP] asciidoc
@@ -11,60 +11,41 @@
 [DEP] cairo
 [DEP] cmake
 [DEP] coreutils
-[DEP] dejavu-ttf-fonts
 [DEP] diffutils
 [DEP] encodings
-[DEP] expat
 [DEP] findutils
-[DEP] font-alias
-[DEP] font-util
 [DEP] fontconfig
-[DEP] freefonts
-[DEP] freetype
-[DEP] fribidi
 [DEP] gawk
 [DEP] gdk-pixbuf
 [DEP] gettext
 [DEP] glib
 [DEP] gobject-introspection
-[DEP] graphite2
+[DEP] graphviz
 [DEP] grep
 [DEP] harfbuzz
 [DEP] json-glib
 [DEP] lcms2
-[DEP] libffi
 [DEP] libjpeg
+[DEP] libmypaint
 [DEP] libpng
 [DEP] librsvg
 [DEP] libsdl2
 [DEP] libtiff
 [DEP] libv4l
 [DEP] libwebp
-[DEP] libx11
-[DEP] libxau
-[DEP] libxcb
-[DEP] libxdmcp
-[DEP] libxext
-[DEP] libxft
-[DEP] libxrender
 [DEP] linux-header
-[DEP] luajit
 [DEP] make
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
+[DEP] openexr
+[DEP] openimageio
+[DEP] openssl
 [DEP] pango
-[DEP] pcre2
-[DEP] pixman
 [DEP] pkgconfig
 [DEP] pulseaudio
 [DEP] python
 [DEP] sed
-[DEP] shared-mime-info
 [DEP] tar
-[DEP] util-linux
 [DEP] vala
 [DEP] xorgproto
 [DEP] xz
-[DEP] zlib
-[DEP] zstd

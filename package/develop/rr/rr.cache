@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1696342782 Tue Oct  3 16:19:42 2023
-[BUILDTIME] 75 (9)
-[SIZE] 4.29 MB, 53 files
+[TIMESTAMP] 1703705088 Wed Dec 27 19:24:48 2023
+[BUILDTIME] 80 (9)
+[SIZE] 4.03 MB, 53 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -11,13 +11,11 @@
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
-[DEP] git
 [DEP] grep
 [DEP] gzip
 [DEP] libcapnp
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
 [DEP] pkgconfig
 [DEP] procps
 [DEP] python

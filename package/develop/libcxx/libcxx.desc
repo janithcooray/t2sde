@@ -25,7 +25,7 @@
 
 [L] BSD MIT
 [S] Stable
-[V] 17.0.1
+[V] 17.0.6
 [P] O -1---5---9 102.700
 
-[D] e351f4666af77f798960ec13c038dcbd123b3580c7c96323034b7653 libcxx-17.0.1.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.1/
+[D] a90561662aa6023ea94b067e8451fd0a14997a18bac7b5533adaf418 libcxx-17.0.6.src.tar.xz https://github.com/llvm/llvm-project/releases/download/llvmorg-17.0.6/

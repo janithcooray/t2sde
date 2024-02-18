@@ -1,49 +1,33 @@
 
-[TIMESTAMP] 1684691879 Sun May 21 17:57:59 2023
-[BUILDTIME] 0 (9)
+[TIMESTAMP] 1707664547 Sun Feb 11 15:15:47 2024
+[BUILDTIME] 10 (9)
 [SIZE] 3.32 MB, 1731 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
 [DEP] cmake
 [DEP] coreutils
-[DEP] dbus
 [DEP] diffutils
-[DEP] expat
 [DEP] findutils
-[DEP] freetype
 [DEP] gawk
 [DEP] git
-[DEP] glib
 [DEP] grep
-[DEP] harfbuzz
-[DEP] icu4c
 [DEP] karchive
 [DEP] kconfig
 [DEP] kcoreaddons
-[DEP] kdbusaddons
 [DEP] kde-extra-cmake-modules
 [DEP] ki18n
 [DEP] kservice
-[DEP] libdrm
-[DEP] libpng
-[DEP] libx11
-[DEP] libxau
-[DEP] libxcb
-[DEP] libxext
-[DEP] libxfixes
-[DEP] libxshmfence
-[DEP] libxxf86vm
 [DEP] linux-header
 [DEP] make
-[DEP] mesa
-[DEP] pcre2
+[OPT] openldap
 [DEP] qt5base
+[DEP] qt5imageformats
 [DEP] qt5svg
+[DEP] qt5virtualkeyboard
 [DEP] qt5wayland
-[DEP] qt5x11extras
 [DEP] sed
 [DEP] tar
-[DEP] udev
+[DEP] tbb
 [DEP] xz
-[DEP] zlib

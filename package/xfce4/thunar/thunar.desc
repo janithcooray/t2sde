@@ -27,10 +27,10 @@
 
 [L] GPL
 [S] Stable
-[V] 4.18.7
+[V] 4.18.10
 [P] X -----5---9 800.000
 
 [O] . $base/package/xfce4/*/xfce4-conf.in
 [O] var_append GCC_WRAPPER_INSERT ' ' "-c?:-L`pkgprefix libdir libx11` -lX11 -lXrender"
 
-[D] f89e5d4c8fbb6e4ea40b6f9e3c81fc80ffaa69746d022bada0078001 thunar-4.18.7.tar.bz2 http://archive.xfce.org/src/xfce/thunar/4.18/
+[D] facacf2fd2521ff203f35940c12912ca2aa7707e1575384f91d60014 thunar-4.18.10.tar.bz2 http://archive.xfce.org/src/xfce/thunar/4.18/

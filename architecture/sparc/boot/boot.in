@@ -26,7 +26,7 @@ arch_boot_cd_pre() {
 	             --compression auto iso9660 fat part_sun part_msdos part_gpt
 
 	# header
-	sed -n '/CUT/q;p' $base/architecture/sparc/boot/grub.cfg \
+	sed -n '/CUT/q;p' $base/architecture/share/boot/grub.cfg \
 		> $1/boot/grub/grub.cfg
 }
 
@@ -42,7 +42,7 @@ EOT
 
 arch_boot_cd_post() {
 	# footer
-	sed '1,/CUT/d' $base/architecture/sparc/boot/grub.cfg \
+	sed '1,/CUT/d' $base/architecture/share/boot/grub.cfg \
 		>> $1/boot/grub/grub.cfg
 	echo_status "Creating isofs_arch.txt file .."
 

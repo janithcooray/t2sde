@@ -1,27 +1,39 @@
 
-[TIMESTAMP] 1695849630 Wed Sep 27 23:20:30 2023
-[BUILDTIME] 60 (9)
-[SIZE] 64.65 MB, 281 files
+[TIMESTAMP] 1706872528 Fri Feb  2 12:15:28 2024
+[BUILDTIME] 170 (9)
+[SIZE] 72.22 MB, 286 files
 
 [DEP] 00-dirtree
+[OPT] a52dec
 [DEP] alsa-lib
 [DEP] bash
 [DEP] binutils
 [DEP] bzip2
 [DEP] coreutils
+[OPT] dav1d
 [DEP] diffutils
+[OPT] faac
+[OPT] faad
 [DEP] findutils
-[DEP] freetype
+[OPT] freetype
 [DEP] gawk
 [DEP] git
 [DEP] grep
-[DEP] lame
-[DEP] libogg
-[DEP] libsdl2
-[DEP] libtheora
+[OPT] imlib2
+[OPT] lame
+[OPT] libaom
+[OPT] libbluray
+[OPT] libcdio-paranoia
+[OPT] libdc1394
+[OPT] libext
+[OPT] libogg
+[OPT] libsdl
+[OPT] libsdl2
+[OPT] libtheora
 [DEP] libva
 [DEP] libvdpau
-[DEP] libvorbis
+[OPT] libvorbis
+[OPT] libvpx
 [DEP] libx11
 [DEP] libxcb
 [DEP] libxext
@@ -29,17 +41,22 @@
 [DEP] linux-header
 [DEP] make
 [DEP] nasm
+[OPT] onevpl
+[OPT] opencore-amr
 [DEP] openssl
 [DEP] patch
 [DEP] perl
-[DEP] pulseaudio
+[OPT] pulseaudio
+[OPT] rav1e
+[OPT] schroedinger
 [DEP] sed
-[DEP] speex
+[OPT] speex
+[OPT] svt-av1
 [DEP] tar
 [DEP] texinfo
 [DEP] vulkan-headers
-[DEP] x264
+[OPT] x264
 [DEP] xorgproto
-[DEP] xvid
+[OPT] xvid
 [DEP] xz
-[DEP] zlib
+[OPT] zlib

@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1695850234 Wed Sep 27 23:30:34 2023
-[BUILDTIME] 20 (9)
-[SIZE] 136.76 MB, 4309 files
+[TIMESTAMP] 1707069015 Sun Feb  4 17:50:15 2024
+[BUILDTIME] 50 (9)
+[SIZE] 136.78 MB, 4309 files
 
 [DEP] 00-dirtree
 [DEP] acl
@@ -24,14 +24,16 @@
 [DEP] glib
 [DEP] gmp
 [DEP] gnutls
+[OPT] gpm
 [DEP] grep
+[OPT] gtk
 [DEP] gtk+
 [DEP] gzip
 [DEP] harfbuzz
+[DEP] jansson
 [DEP] lcms2
 [DEP] libice
 [DEP] libpng
-[DEP] librsvg
 [DEP] libsm
 [DEP] libtiff
 [DEP] libwebp
@@ -54,7 +56,7 @@
 [DEP] sed
 [DEP] sqlite
 [DEP] tar
-[DEP] tree-sitter
+[OPT] tree-sitter
 [DEP] xcb-util
 [DEP] xorgproto
 [DEP] xz

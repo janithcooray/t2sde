@@ -1,6 +1,6 @@
 
-[TIMESTAMP] 1692387281 Fri Aug 18 21:34:41 2023
-[BUILDTIME] 30 (9)
+[TIMESTAMP] 1707061782 Sun Feb  4 15:49:42 2024
+[BUILDTIME] 35 (9)
 [SIZE] 0.84 MB, 157 files
 
 [DEP] 00-dirtree
@@ -9,23 +9,20 @@
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
-[DEP] expat
 [DEP] findutils
-[DEP] fontconfig
 [DEP] freetype
 [DEP] gawk
 [DEP] git
 [DEP] grep
+[DEP] kconfig
 [DEP] kde-extra-cmake-modules
-[DEP] libpng
+[DEP] ki18n
 [DEP] libx11
-[DEP] libxau
 [DEP] libxcb
-[DEP] libxdmcp
 [DEP] libxfixes
 [DEP] linux-header
 [DEP] make
-[DEP] net-tools
+[OPT] openldap
 [DEP] pkgconfig
 [DEP] qt5base
 [DEP] qt5imageformats
@@ -36,8 +33,8 @@
 [DEP] qt5x11extras
 [DEP] sed
 [DEP] tar
+[DEP] tbb
 [DEP] xcb-util-keysyms
 [DEP] xcb-util-wm
 [DEP] xorgproto
 [DEP] xz
-[DEP] zlib

@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1692376489 Fri Aug 18 18:34:49 2023
-[BUILDTIME] 30 (9)
-[SIZE] 10.48 MB, 233 files
+[TIMESTAMP] 1703691032 Wed Dec 27 15:30:32 2023
+[BUILDTIME] 35 (9)
+[SIZE] 10.49 MB, 233 files
 
 [DEP] 00-dirtree
 [DEP] at-spi2-core
@@ -9,7 +9,6 @@
 [DEP] binutils
 [DEP] bison
 [DEP] cairo
-[DEP] cmake
 [DEP] coreutils
 [DEP] dbus
 [DEP] diffutils
@@ -24,12 +23,14 @@
 [DEP] gdk-pixbuf
 [DEP] gettext
 [DEP] glib
-[DEP] gobject-introspection
+[DEP] gmp
+[OPT] gobject-introspection
 [DEP] graphite2
 [DEP] grep
+[DEP] gsl
 [DEP] gtk+
 [DEP] harfbuzz
-[DEP] libcap
+[OPT] libcap
 [DEP] libdrm
 [DEP] libelf
 [DEP] libffi
@@ -43,7 +44,6 @@
 [DEP] libxcomposite
 [DEP] libxcursor
 [DEP] libxdamage
-[DEP] libxdmcp
 [DEP] libxext
 [DEP] libxfixes
 [DEP] libxft
@@ -57,7 +57,6 @@
 [DEP] m4
 [DEP] mesa
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
 [DEP] pango
 [DEP] pcre2
@@ -67,6 +66,7 @@
 [DEP] sed
 [DEP] shared-mime-info
 [DEP] tar
+[DEP] unwind
 [DEP] util-linux
 [DEP] wayland
 [DEP] xkbcommon

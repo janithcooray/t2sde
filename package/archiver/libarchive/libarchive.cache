@@ -1,11 +1,11 @@
 
-[TIMESTAMP] 1690112781 Sun Jul 23 13:46:21 2023
-[BUILDTIME] 10 (9)
-[SIZE] 7.29 MB, 59 files
+[TIMESTAMP] 1703961103 Sat Dec 30 19:31:43 2023
+[BUILDTIME] 25 (9)
+[SIZE] 7.63 MB, 61 files
 
 [DEP] 00-dirtree
 [DEP] acl
-[DEP] attr
+[DEP] bash
 [DEP] binutils
 [DEP] bzip2
 [DEP] coreutils
@@ -16,9 +16,11 @@
 [DEP] grep
 [DEP] libxml
 [DEP] linux-header
+[DEP] lz4
 [DEP] make
 [DEP] openssl
 [DEP] sed
 [DEP] tar
 [DEP] xz
 [DEP] zlib
+[DEP] zstd

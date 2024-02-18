@@ -1,11 +1,12 @@
 
-[TIMESTAMP] 1691062680 Thu Aug  3 13:38:00 2023
-[BUILDTIME] 1 (9)
+[TIMESTAMP] 1707068878 Sun Feb  4 17:47:58 2024
+[BUILDTIME] 3 (9)
 [SIZE] 0.08 MB, 11 files
 
 [DEP] 00-dirtree
 [DEP] bash
 [DEP] binutils
+[DEP] bzip2
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
@@ -15,9 +16,6 @@
 [DEP] grep
 [DEP] gtk+12
 [DEP] libsdl
-[DEP] libx11
-[DEP] libxext
-[DEP] libxi
 [DEP] linux-header
 [DEP] make
 [DEP] sed

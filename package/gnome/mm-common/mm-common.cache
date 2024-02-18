@@ -1,5 +1,5 @@
 
-[TIMESTAMP] 1690849890 Tue Aug  1 02:31:30 2023
+[TIMESTAMP] 1707758843 Mon Feb 12 17:27:23 2024
 [BUILDTIME] 1 (9)
 [SIZE] 5.12 MB, 45 files
 
@@ -10,13 +10,15 @@
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
-[DEP] glib
+[OPT] glib
 [DEP] grep
-[DEP] gtk-doc
+[DEP] gsettings-desktop-schemas
+[DEP] libsecret
 [DEP] meson
 [DEP] ninja
+[DEP] openssl
 [DEP] perl
 [DEP] python
 [DEP] sed
 [DEP] tar
-[DEP] upower
+[DEP] xz

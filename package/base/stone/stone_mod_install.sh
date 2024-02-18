@@ -11,27 +11,31 @@
 # --- T2-COPYRIGHT-NOTE-END ---
 
 # TODO:
+# - i?86-pc lvm and encryption
+# - sun4v gpt
+# - more generic lvm and encryption support
 # - check error, esp. of cryptsetup and lvm commands and display red alert on error
 # - avoid all direct user input, so the installer works in GUI variants
 
 # detect platform once
 platform=$(uname -m)
 platform2=$(grep '\(platform\|type\)' /proc/cpuinfo) platform2=${platform2##*: }
-[ -e /sys/firmware/efi ] && platform_efi=efi
+[ -e /sys/firmware/efi ] && platform="$platform-efi" ||
 case $platform in
 	alpha)
 		;;
 	arm*|ia64|riscv*)
-		[ "$platform_efi" ] && platform="$platform-efi" || platform=
+		platform=
 		;;
 	hppa*)
 		;;
 	mips64)
 		;;
 	ppc*)
-		# TODO: chrp, prep, ps3, opal, ...
+		# TODO: prep, ps3, opal, ...
 		case "$platform2" in
-		    PowerMac)	platform="$platform-$platform2" ;;
+		    CHRP|PowerMac|PS3)
+				platform="$platform-$platform2" ;;
 		    *)		platform= ;;
 		esac
 		;;
@@ -39,7 +43,7 @@ case $platform in
 		platform="$platform-$platform2"
 		;;
 	i?86|x86_64)
-		[ "$platform_efi" ] && platform="$platform-efi" || platform="$platform-pc" 
+		platform="$platform-pc" 
 		;;
 	*)
 		platform=
@@ -272,6 +276,7 @@ disk_partition() {
 
 	local fdisk="sfdisk -W always"
 	local script=
+	local postscript=()
 	local fs=
 
 	case $platform in
@@ -315,6 +320,14 @@ start=$((size - swap + boot))m, size=$((swap - boot - 20))m, type=82
 9: size=8m, type=0
 11: type=6"
 		;;
+	    ppc*CHRP)
+		# TODO: typ, luks, lvm, ...
+		fs="${dev}3 swap  ${dev}2 any /"
+		script="label:dos
+size=4m, type=41
+size=$((size - swap))m, type=83
+type=82"
+		;;
 	    ppc*PowerMac)
 		fs="${dev}4 swap  ${dev}3 any /"
 		fdisk=mac-fdisk
@@ -328,13 +341,25 @@ y
 q
 "
 		;;
+	    ppc*PS3)
+		# TODO: typ, luks, lvm, ...
+		fs="${dev}1 swap  ${dev}3 any /  ${dev}2 ext3 /boot"
+		script="label:dos
+size=$((swap))m, type=82
+size=$((boot))m, type=83
+type=83"
+		;;
 	    sparc*)
 		# TODO: silo vs grub2 have different requirements
-		fs="${dev}2 swap  ${dev}1 any /"
+		fs="${dev}2 swap  ${dev}4 any /  ${dev}1 ext3 /boot"
 		script="label:sun
-size=$((size - swap))m, type=83
+size=$((boot))m, type=83
 type=82
 start=0, type=W"
+		# sfdisk has a "hard" time creating more than 2 parts w/ whole-disk
+		postscript+=("sfdisk --delete ${dev} 2")
+		postscript+=("echo 'size=${swap}m, type=82' | sfdisk -N 2 ${dev}")
+		postscript+=("echo 'type=83' | sfdisk -N 4 ${dev}")
 		;;
 	    *)
 		fs="${dev}1 swap  ${dev}2 any /"
@@ -349,31 +374,39 @@ type=83"
 	dd if=/dev/zero of=$dev seek=1 count=1 # mostly for Apple PowerPac parts
 	echo "$script" | $fdisk $dev
 
+	# posrscript fixup, due less than stellar sfdisk
+	for cmd in "${postscript[@]}"; do
+	    eval "$cmd"
+	done
+
 	# create fs
 	set -- $fs
 	while [ $# -gt 0 ]; do
-	    local dev=$1; shift
+	    local d=$1; shift
 	    local fs=$1; shift
 	    local mnt=$1
 	    [ "$fs" != swap ] && shift || mnt=
 
+	    # fix device partitions separated w/ p
+	    [[ $dev = *[0-9] ]] && d=${dev}p${d#$dev}
+
 	    if [[ "$typ" = *luks* && ("$mnt" = / || "$fs" = swap) ]]; then
 		local name=root
 		[ "$fs" = swap ] && name=swap
-		part_crypt $dev $name
-		dev=/dev/mapper/$name
+		part_crypt $d $name
+		d=/dev/mapper/$name
 	    fi
 
 	    case $fs in
-		lvm)	part_pvcreate $dev vg0
+		lvm)	part_pvcreate $d vg0
 			lv_create vg0 linear ${swap}m swap
 			lv_create vg0 linear 100%FREE root
 			part_mkswap /dev/vg0/swap
 			part_mkfs /dev/vg0/root any /
 			;;
-		swap)	part_mkswap $dev
+		swap)	part_mkswap $d
 			;;
-		*)	part_mkfs $dev $fs $mnt
+		*)	part_mkfs $d $fs $mnt
 			;;
 	    esac
 	done
@@ -389,10 +422,10 @@ can't modify this partition table."
 	local cmd="gui_menu disk 'Edit partition table of $1'"
 
 	if [ "$platform" ]; then
-	    cmd="$cmd \"Automatically partition bootable for this platform:\" ''"
+	    cmd="$cmd \"Automatically partition bootable for this platform ($platform):\" ''"
 	    cmd="$cmd \"Classic partitions\" \"disk_partition /dev/$1\""
 	    case "$platform" in
-	    *efi)
+	    *efi|*CHRP)
 		cmd="$cmd \"Encrypted partitions\" \"disk_partition /dev/$1 luks\""
 		cmd="$cmd \"Logical Volumes\" \"disk_partition /dev/$1 lvm\""
 		cmd="$cmd \"Encrypted Logical Volumes\" \"disk_partition /dev/$1 luks+lvm\""
@@ -583,15 +616,16 @@ umount -v /sys
 EOT
 		chmod +x /mnt/tmp/stone_postinst.sh
 		rm -f /mnt/etc/mtab
-		grep ' /mnt[/ ]' /proc/mounts |
-			sed 's,/mnt/\?,/,' > /mnt/etc/mtab
+		sed -n '/ \/mnt[/ ]/s,/mnt/\?,/,p' /proc/mounts > /mnt/etc/mtab
 		cd /mnt; chroot . ./tmp/stone_postinst.sh
 		rm -fv ./tmp/stone_postinst.sh
 
-		if gui_yesno "Do you want to un-mount the filesystems and reboot now?"
+		kexec=$(type -p kexec)
+
+		if gui_yesno "Do you want to un-mount the filesystems and reboot${kexec:+ (via kexec)} now?"
 		then
 			# try to re-boot via kexec, if available
-			if type -p kexec > /dev/null; then
+			if [ "$kexec" ]; then
 			    cmdline=$(< /proc/cmdline)
 			    if [ -e /mnt/boot/grub/grub.cfg ]; then
 				root=$(sed -n "/.*\(root=.*\)/{ s//\1/p; q}" /mnt/boot/grub/grub.cfg)

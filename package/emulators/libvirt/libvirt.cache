@@ -1,41 +1,45 @@
 
-[TIMESTAMP] 1693125403 Sun Aug 27 10:36:43 2023
-[BUILDTIME] 80 (9)
-[SIZE] 33.04 MB, 411 files
+[TIMESTAMP] 1704029221 Sun Dec 31 14:27:01 2023
+[BUILDTIME] 120 (9)
+[SIZE] 45.76 MB, 757 files
 
 [DEP] 00-dirtree
 [DEP] acl
+[DEP] augeas
+[DEP] bash
 [DEP] binutils
+[DEP] cmake
 [DEP] coreutils
 [DEP] curl
 [DEP] cyrus-sasl2
-[DEP] dbus
 [DEP] diffutils
 [DEP] docutils
 [DEP] findutils
-[DEP] fuse2
+[DEP] fuse
 [DEP] gawk
+[DEP] gettext
 [DEP] glib
+[OPT] glusterfs
 [DEP] gnutls
 [DEP] grep
-[DEP] libffi
 [DEP] libnl
 [DEP] libpcap
-[DEP] libpciaccess
+[DEP] libssh
+[DEP] libssh2
 [DEP] libtasn1
+[DEP] libtirpc
 [DEP] libxml
+[DEP] libxslt
 [DEP] linux-header
 [DEP] m4
 [DEP] meson
 [DEP] ninja
-[DEP] pcre2
+[DEP] numactl
 [DEP] perl
 [DEP] python
 [DEP] readline
-[DEP] rpcsvc-proto
 [DEP] sed
 [DEP] tar
-[DEP] udev
 [DEP] util-linux
-[DEP] zlib
-[DEP] zstd
+[DEP] xz
+[DEP] yajl

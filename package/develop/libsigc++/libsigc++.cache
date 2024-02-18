@@ -1,21 +1,26 @@
 
-[TIMESTAMP] 1690109695 Sun Jul 23 12:54:55 2023
-[BUILDTIME] 5 (9)
-[SIZE] 0.28 MB, 57 files
+[TIMESTAMP] 1707758741 Mon Feb 12 17:25:41 2024
+[BUILDTIME] 20 (9)
+[SIZE] 0.30 MB, 58 files
 
 [DEP] 00-dirtree
+[DEP] bash
 [DEP] binutils
+[DEP] boost
 [DEP] cmake
 [DEP] coreutils
 [DEP] diffutils
 [DEP] findutils
 [DEP] gawk
+[DEP] git
 [DEP] grep
 [DEP] linux-header
 [DEP] make
 [DEP] meson
-[DEP] net-tools
 [DEP] ninja
+[DEP] openssl
 [DEP] python
 [DEP] sed
 [DEP] tar
+[DEP] tbb
+[DEP] xz

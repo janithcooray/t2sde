@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] fed47ce6c715d7c4f801f6651193e3c40a253b87ac6bc27502e07fb7 kalzium-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 154fd760fb5c7ba97da0c5f72447504bf5645ae0d7d57dbb1a3e5bf9 kalzium-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

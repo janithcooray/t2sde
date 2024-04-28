@@ -28,9 +28,13 @@ vitalmods[qla1280.ko]=1 # Sgi Octane
 vitalmods[qla2xxx.ko]=1 # Sun Blade, T4
 vitalmods[tg3.ko]=1	# Sun Fire
 vitalmods[xhci-pci.ko]=1 # probably every modern machine
+vitalmods[r8152.ko]=1
+vitalmods[r8169.ko]=1
 
 # TODO: defauls for vintage vs. latest, usb, pata, etc.
-filter="-e ext4 -e isofs -e pata_legacy -e pata_.*platform -e sym53c8xx -e /aic7xxx
+filter="-e ext4 -e isofs -e pata_legacy -e pata_.*platform
+-e pata_macio -e mac_esp -e sym53c8xx -e /aic7xxx
+-e pci-host-generic -e virtio_pci_.*_dev -e virtio_pci -e virtio_blk
 -e s[rd]_mod -e /ahci.ko -e /nvme.ko -e [uoex]hci-pci -e usbhid -e zram
 -e /offb -e /bochs -e ps3fb"
 
@@ -48,7 +52,7 @@ while [ "$1" ]; do
 	-a) archprefix="$2" ; shift ;;
 	--firmware) firmware=1 ;;
 	--minimal) minimal=1 ;;
-	--network) network=0 ;;
+	--network) network= ;;
 	--microcode) microcode=1 ;;
 	-e) filter="$filter $2" ; shift ;;
 	-o) outfile="$2" ; shift ;;
@@ -58,18 +62,19 @@ while [ "$1" ]; do
   shift
 done
 
+# -e ps3vram -e net/phy
 [ -z "$minimal" ] && filter="$filter -e reiserfs -e btrfs -e /jfs -e /xfs -e jffs2
 -e ext2 -e /udf -e overlayfs -e ntfs -e /fat -e /hfs -e floppy -e efivarfs
 -e /ata/ -e /scsi/ -e /fusion/ -e /sdhci/ -e nvme/host -e /mmc/
--e virtio.\(blk\|scsi\|net\|console\|input\|gpu\|pci\)
--e /ast/ -e ps3disk -e ps3vram -e drivers/pcmcia
+-e virtio.\(blk\|scsi\|net\|console\|input\|gpu\|pci\) -e ps3disk -e drivers/pcmcia
 -e dm-mod -e dm-raid -e md/raid -e dm/mirror -e dm/linear -e dm-crypt -e dm-cache
--e /rtc/ -e /aes -e /sha -e /blake -e /cbc -e /ecb -e xts
+-e /aes -e /sha -e /blake -e /cbc -e /ecb -e xts
 -e cciss -e ips -e nls_cp437 -e nls_iso8859-1 -e nls_utf8
 -e /.hci -e usb-common -e usb-storage -e sbp2 -e uas
--e usbhid -e i2c-hid -e hid-generic -e hid-multitouch
+-e usbhid -e i2c-hid -e hid-generic -e hid-multitouch -e /ast/
 -e hid-apple -e hid-microsoft -e hyperv-keyboard -e pci/controller
--e cpufreq/[^_]\+$ -e hwmon.*temp"
+-e aqc111 -e asix -e ax88179_178a -e cdc_ether -e cx82310_eth -e r8153_ecm -e rtl8150 -e r8152
+-e cpufreq/[^_]\+$ -e hwmon.*temp -e /rtc/"
 
 [ "$network" ] && filter="$filter -e /ipv4/ -e '/ipv6\.' -e ethernet -e nfsv4"
 
@@ -136,11 +141,14 @@ if [ "$moddir" ]; then
 	local x="$1" module="${1##*/}"
 
 	[ "${added["$module"]}" ] && return
-
-	# expand to full name if it was a depend
-	[ $x = ${x##*/} ] && x=`sed -n "/\/${x/./\\.}.*/{p; q}" $map`
-
 	added["$module"]=1
+
+	# expand to full name if it was a depend, softdep may also built-in
+	if [ $x = ${x##*/} ]; then
+		x=`sed -n "/\/${x/./\\.}.*/{p; q}" $map`
+		# found? e.g. no built-in softdep?
+		[ "$x" ] || return
+	fi
 
 	echo -n "$module "
 
@@ -182,8 +190,9 @@ if [ "$moddir" ]; then
 	    cp -af $x $tmpdir$xt
 	    $compressor --rm -f --quiet $tmpdir$xt &
 
-	    # add it's deps, too
-	    for fn in `$modinfo -F depends $x | sed 's/,/ /g'`; do
+	    # add deps: one are comma separated, the other pre: post: prefixed
+	    for fn in $($modinfo -F depends $x | sed 's/,/ /g') \
+		$($modinfo -F softdep $x | sed 's/.*: //'); do
 		add_depend "$fn.ko"
 	    done
 	fi
@@ -300,7 +309,7 @@ done
 #
 [ -z "$minimal" ] &&
 for x in $root/sbin/{insmod,blkid,lvm,vgchange,lvchange,vgs,lvs,mdadm} \
-	 $root/usr/sbin/{cryptsetup,smartctl,cache_check,ipconfig} $root/usr/embutils/{dmesg,swapon}
+	 $root/usr/sbin/{cryptsetup,smartctl,cache_check,ipconfig} $root/usr/embutils/{dmesg,mkswap,swapon}
 do
   if [ ! -e $x ]; then
 	echo "Warning: Skipped optional file ${x#$root}!"

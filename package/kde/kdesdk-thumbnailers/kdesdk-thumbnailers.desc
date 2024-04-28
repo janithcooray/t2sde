@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 633bfb444e2fa19a8ee21c55e8a55a3784ca5bd9081caf367f6561d5 kdesdk-thumbnailers-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 0e4fbfe688fe65b917726d623b3c1c3ef70c5b0950a4710369358eca kdesdk-thumbnailers-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

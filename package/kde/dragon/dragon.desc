@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 46a62cfeff63ef7a19d14ed0d4f3b426ca4fe49a93fdfbbe1744afe8 dragon-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] b67c8e022ddba717eb39baca08472e2e3eea72a32c7fd1daa7d46cd9 dragon-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

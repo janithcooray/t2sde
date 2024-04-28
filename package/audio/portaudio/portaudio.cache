@@ -12,10 +12,11 @@
 [DEP] findutils
 [DEP] gawk
 [DEP] grep
-[DEP] jack
+[OPT] jack
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig
+[DEP] scons
 [DEP] sed
 [DEP] sysfiles
 [DEP] tar

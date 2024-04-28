@@ -23,7 +23,7 @@
 
 [L] GPL
 [S] Stable
-[V] 0.62
+[V] 0.64
 [P] X -----5---9 136.800
 
-[D] 347be50a94d19401442daf7efa919b0e4b6ecf5e44e2375405bf7cd8 ell-0.62.tar.xz https://mirrors.edge.kernel.org/pub/linux/libs/ell/
+[D] 4da141c27156fd6326bf3ddf9139752075d09b7fbf1b71e04511511a ell-0.64.tar.xz https://mirrors.edge.kernel.org/pub/linux/libs/ell/

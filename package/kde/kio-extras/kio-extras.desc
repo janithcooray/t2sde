@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 179.300
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 247fe6ac86d3dd8f9b538ecaefda91c9e3651c5e93729df1160f55bd kio-extras-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 534670dce9e8311645756edc74c5273c26dcabc4b0afeba81f9dcfe6 kio-extras-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

@@ -1,0 +1,19 @@
+
+[TIMESTAMP] 1711589406 Thu Mar 28 01:30:06 2024
+[BUILDTIME] 1 (9)
+[SIZE] 0.17 MB, 39 files
+
+[DEP] 00-dirtree
+[DEP] bash
+[DEP] coreutils
+[DEP] diffutils
+[DEP] findutils
+[DEP] gawk
+[DEP] grep
+[DEP] gzip
+[DEP] make
+[DEP] perl
+[DEP] perl-sax-exception
+[DEP] perl-xml-namespace-support
+[DEP] sed
+[DEP] tar

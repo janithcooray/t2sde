@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 2022546b5f0a0c93b39eda2edc284e574899cdc7af52983b0681e2fa krdc-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 6a5461b07724c26683940e3175150dbda482b3ee972c8ff2482f1d74 krdc-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

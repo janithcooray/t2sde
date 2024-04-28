@@ -27,7 +27,7 @@
 
 [L] Artistic
 [S] Stable
-[V] 2024.01
+[V] 2024.03
 [P] X -----5---9 209.701
 
-[D] 4905f447da985761d8a3f98720e295d822e6f15b2cb12d188a061402 nqp-2024.01.tar.gz https://rakudo.org/dl/nqp/
+[D] 89a9f12072d2bfdb149b3e0fc767f632aeea77c02b27886f8c67157f nqp-2024.03.tar.gz https://rakudo.org/dl/nqp/

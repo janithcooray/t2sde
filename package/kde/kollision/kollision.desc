@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 179.300
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] cf92113bac404b51183bb622a0d2788357eace51b29e52285a037c8a kollision-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 7ca067d57b8a9731f90693f473121edff969e7201c5d31edc236b9ab kollision-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

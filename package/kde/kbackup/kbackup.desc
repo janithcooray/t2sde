@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] c6f4753d23c00831a787e5e9a8ba608a2f5bacb202b7ec435328f15f kbackup-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 6d01fab2363acf219c243132421ae07ec13c1cce2115bd0f330096c0 kbackup-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

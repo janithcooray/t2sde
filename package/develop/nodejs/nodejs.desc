@@ -26,9 +26,8 @@
 
 [L] MIT
 [S] Stable
-[V] 21.6.1
+[V] 21.7.1
 [P] X -----5---9 152.666
 
-[CV-FLAGS] ODD-STABLE
 [CV-URL] https://nodejs.org/dist/latest/
-[D] d24a8d60c2f8f96d2cf75054d2496f5740e379d37559a24448d5b8fb node-v21.6.1.tar.xz https://nodejs.org/dist/v21.6.1/
+[D] 88fcbd6692709788877ea5e4dc55dae993057950c3cb24f051646eb4 node-v21.7.1.tar.xz https://nodejs.org/dist/v21.7.1/

@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.420
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] a4ef097d56f87905157d18bb44b19fe9044c6b871ea2bc083f38b542 parley-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] eba0cc32872747b5dbd1203a4babbdfe6551b2b59579caa3331eb3a6 parley-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

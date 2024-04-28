@@ -14,6 +14,9 @@ CONFIG_CONSOLE_LOGLEVEL_DEFAULT=5
 dnl CONFIG_SECURITY_DMESG_RESTRICT is not
 CONFIG_DEFAULT_HOSTNAME="t2"
 
+dnl Don't waste precious binary space, don't include kconfig
+# CONFIG_IKCONFIG is not set
+
 dnl Enable experimental features, and stagging drivers
 dnl
 CONFIG_EXPERIMENTAL=y
@@ -122,6 +125,7 @@ CONFIG_XEN=y
 CONFIG_VFIO_PCI_VGA=y
 CONFIG_IRQ_REMAP=y
 CONFIG_BPF_JIT=y
+CONFIG_CGROUP_BPF=y
 CONFIG_BPF_UNPRIV_DEFAULT_OFF=y
 
 dnl Power Management

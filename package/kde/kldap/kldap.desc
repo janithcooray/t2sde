@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 179.300
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 45e77160f5eba744d9843f3dfdef980af780bcd55bb74f45d3c6eae0 kldap-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 6e91f5978cbb16ec701b218801ccb40fce53e7228abc3ea5960390cf kldap-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

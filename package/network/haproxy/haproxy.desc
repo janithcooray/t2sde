@@ -31,8 +31,7 @@
 
 [L] GPL
 [S] Stable
-[V] 2.8.5
+[V] 2.8.7
 [P] X -----5---9 800.000
 
-[CV-FLAGS] ODD-STABLE
-[D] 563ef926c9ba2a4561f02430e85b94da743d185818d881ce946e0b7b haproxy-2.8.5.tar.gz http://www.haproxy.org/download/2.8/src/
+[D] aecf320a6213d7a648fb2e0b64530b3fac5bba88aadfa990ee371af6 haproxy-2.8.7.tar.gz http://www.haproxy.org/download/2.8/src/

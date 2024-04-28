@@ -24,8 +24,8 @@
 
 [L] Free-to-use
 [S] Stable
-[V] 20240115
+[V] 20240312
 [P] X -?2--5---9 999.000
 
 [CV-URL] https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/refs/tags
-[D] 1507239618232d679ab7e2c8d77a443165fe21be592964be775003b1 linux-firmware-20240115.tar.gz https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/
+[D] 6c744c5486d0a354e4a688b03f8bc2248b8ffa24f9540ffd90f1903d linux-firmware-20240312.tar.gz https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/

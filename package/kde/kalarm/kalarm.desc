@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 2df3797bf353f09010200b03b7d9cc56cd1f5b3a471b8ff187945355 kalarm-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] a28cc9dec84fff0c37371cc96cf0e6baaa3136e163b32a740399e16d kalarm-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

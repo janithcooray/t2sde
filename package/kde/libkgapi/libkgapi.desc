@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.420
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] f367964340d1dd5291d6d27727a602dca4bae4940949f2f8642efb92 libkgapi-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] a7cdb703bcd7578f5d1ffc5f05d6869dcbfe6859ed9402c3b8042ade libkgapi-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] d5691f871dec438d4148d0c0428c931043c75f3b149904b70215ea3b kblocks-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 86fe059e7de0c819da3308ff252eb8ce8075217a4009a8ec16c5c528 kblocks-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

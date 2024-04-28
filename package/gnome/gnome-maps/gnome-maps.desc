@@ -22,10 +22,10 @@
 
 [L] LGPL
 [S] Stable
-[V] 45.4
+[V] 46.0
 [P] X -----5---9 177.200
 
 [O] . $base/package/*/*/gnome-conf.in
 
 [CV-URL] https://download.gnome.org/sources/gnome-maps/cache.json
-[D] a55caf6193f6804a17c2ed240893fb7b38dac3b0e02759290fe60dd7 gnome-maps-45.4.tar.xz https://download.gnome.org/sources/gnome-maps/45/
+[D] 2e8ff7e7789b2f1882d6564da0f8aff61a3d1f0210e417b9f2f81444 gnome-maps-46.0.tar.xz https://download.gnome.org/sources/gnome-maps/46/

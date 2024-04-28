@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 179.300
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 435da30a6a8a32e0b2fdf732fcca10a2bb6dc7a2db6a30330aa2c8e9 khelpcenter-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] e9ee46e55600ff10cbf75c92571e0b75ad4fa93dac860816d936bf94 khelpcenter-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

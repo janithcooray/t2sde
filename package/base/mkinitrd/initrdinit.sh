@@ -35,7 +35,7 @@ udevadm trigger
 udevadm settle
 
 # if no fb, try legacy drivers
-if [ ! -e /proc/fb ]; then
+if [ -z "$(cat /proc/fb 2>/dev/null)" ]; then
 	modprobe offb 2>/dev/null
 fi
 
@@ -51,6 +51,43 @@ init="init= $cmdline" init=${init##*init=} init=${init%% *}
 swap="swap= $cmdline" swap=${swap##*swap=} swap=${swap%% *}
 resume="resume= $cmdline" resume=${resume##*resume=} resume=${resume%% *}
 mountopt="ro"
+
+# parse cmdline
+for v in $cmdline; do
+    case "$v" in
+    ro)	mountopt="ro${mountopt#r[ow]}" ;;
+    rw)	mountopt="rw${mountopt#r[ow]}" ;;
+    esac
+done
+ 
+# diskless network root?
+addr="${root%:*}"
+if [ "$addr" != "$root" ]; then
+    filesystems="nfs"
+    mountopt="vers=4,addr=$addr,$mountopt"
+
+    # parse additional, comma separated options
+    _mountopt="$root" root=${root%%,*}
+    _mountopt="${_mountopt#$root}" _mountopt="${_mountopt#,}"
+
+    _IFS="$IFS" IFS=','
+    for v in $_mountopt; do
+	case "$v" in
+	if=*)	netif="${v#if=}" ;;
+	*)	mountopt="$mountopt,$v" ;;
+	esac
+    done
+    IFS="$_IFS"
+    unset _IFS _mountopt
+
+    [ "$netif" ] || netif=eth0
+
+    # shadow $root, to allow loop to wait for nic, first
+    _root=$root
+    root=/sys/class/net/$netif
+else
+    unset addr
+fi
 
 # wait for and mount root device, if specified
 i=0 n=
@@ -97,15 +134,7 @@ while [[ -n "$root" && ($((i++)) -le 15 || "$cmdline" = *rootwait*) ]]; do
 	swapon $swap && swap=
   fi
 
-  # diskless network root?
-  addr="${root%:*}"
-  if [ "$addr" != "$root" ]; then
-    root="${root#$addr}" filesystems="nfs"
-    mountopt="vers=4,addr=$addr,$mountopt"
-    ipconfig eth0
-  else
-    unset addr
-    if [ ! -e "$root" ]; then
+  if [ ! -e "$root" ]; then
 	if [ ${dev#/dev/md[0-9]} != $root -a -e /sbin/mdadm ]; then
 		echo "${n}Scanning for mdadm RAID"; n=
 		mdadm --assemble --scan
@@ -115,10 +144,15 @@ while [[ -n "$root" && ($((i++)) -le 15 || "$cmdline" = *rootwait*) ]]; do
 		echo "${n}Activating LVM $root"; n=
 		lvchange -a ay $(mapper2lvm ${root#/dev/})
 	fi
-    fi
   fi
 
-  if [ -e $root -o "$addr" ]; then
+  if [ -e $root ]; then
+        if [ "$addr" ]; then
+	    echo -n "${n}"; n=
+	    ipconfig $netif
+	    root="$_root"; unset _root
+	fi
+
 	echo "${n}Mounting $root on / $mountopt"; n=
 	if [ -z "$filesystems" ]; then
 	  if type -p cryptsetup >/dev/null && cryptsetup --disable-locks isLuks $root; then

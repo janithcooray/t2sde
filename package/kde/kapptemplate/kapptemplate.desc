@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 6fecfe29b89bc5121665d61b97f5c6dc24500de59a3c8fe8ade63149 kapptemplate-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] f2cd0b9f2306e0b21bd0878fd080c520751ed05cb36c86d8ba46b336 kapptemplate-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

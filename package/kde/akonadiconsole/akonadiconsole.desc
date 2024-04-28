@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 25ea601b724ba54e4c1771663181c8c04b34d1da94541e26c761e6d6 akonadiconsole-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 6f675d8ceeb31f0825bbdb40b8e338a6df994d4410a7714fd3c61cd7 akonadiconsole-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

@@ -1,7 +1,7 @@
 
-[TIMESTAMP] 1704840842 Wed Jan 10 00:54:02 2024
-[BUILDTIME] 14 (9)
-[SIZE] 1.79 MB, 166 files
+[TIMESTAMP] 1710867792 Tue Mar 19 18:03:12 2024
+[BUILDTIME] 16 (9)
+[SIZE] 1.80 MB, 168 files
 
 [DEP] 00-dirtree
 [DEP] bash
@@ -13,7 +13,6 @@
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
-[DEP] libxml
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig

@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 90cdc73947477c4546c8db82313f5c4a40d4a4ed2f0081c19bd90237 libgravatar-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 9d995b10b52a0a7077b17551782bf28d7b278b7228d56e4f5c8362a0 libgravatar-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

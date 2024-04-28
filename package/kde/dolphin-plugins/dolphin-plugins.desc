@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 96be970934258afc1ccb56dcf5a314611c8e528160b691b806153d11 dolphin-plugins-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 2780211b1ec3b2cd0c62983518166485303cdb5e045af85b1f0826dd dolphin-plugins-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

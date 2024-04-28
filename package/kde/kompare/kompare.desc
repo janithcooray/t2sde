@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 179.300
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] a3b387e4ed2865134c169a9f7752cbc04c60357722bbaf3396903c6d kompare-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 31607e9a9396353550e5dbb9d47f44c48cfdbbcbf5f3375f70c6c3d6 kompare-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

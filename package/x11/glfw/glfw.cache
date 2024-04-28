@@ -1,36 +1,26 @@
 
-[TIMESTAMP] 1703620276 Tue Dec 26 19:51:16 2023
-[BUILDTIME] 8 (9)
-[SIZE] 0.64 MB, 16 files
+[TIMESTAMP] 1710496689 Fri Mar 15 10:58:09 2024
+[BUILDTIME] 3 (9)
+[SIZE] 13.62 MB, 47 files
 
 [DEP] 00-dirtree
-[DEP] bash
 [DEP] binutils
 [DEP] cmake
+[OPT] kde-extra-cmake-modules
 [DEP] coreutils
 [DEP] diffutils
-[DEP] doxygen
-[DEP] expat
+[OPT] doxygen
 [DEP] findutils
-[DEP] fontconfig
-[DEP] freeglut
 [DEP] freetype
 [DEP] gawk
 [DEP] grep
 [DEP] gzip
-[DEP] libpng
-[DEP] libx11
-[DEP] libxcursor
-[DEP] libxext
-[DEP] libxfixes
-[DEP] libxi
-[DEP] libxinerama
-[DEP] libxrandr
-[DEP] libxrender
+[OPT] libx11
 [DEP] linux-header
 [DEP] make
 [DEP] pkgconfig
 [DEP] sed
 [DEP] tar
-[DEP] xorgproto
-[DEP] zlib
+[OPT] wayland
+[DEP] xkbcommon
+[OPT] xorgproto

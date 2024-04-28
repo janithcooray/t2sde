@@ -23,6 +23,8 @@
 [C] extra/multimedia
 [F] CROSS
 
+[E] opt doxygen
+
 [L] LGPL
 [S] Stable
 [V] 1.17.6
@@ -30,5 +32,4 @@
 
 [O] var_append confopt ' ' '--disable-go'
 
-[CV-FLAGS] ODD-STABLE
 [D] 260ee6b446ccd60e8190f8427bc4d4f7ea125e8f7064c64adb162316 libheif-1.17.6.tar.gz https://github.com/strukturag/libheif/releases/download/v1.17.6/

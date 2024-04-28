@@ -23,10 +23,9 @@
 
 [L] GPL
 [S] Stable
-[V] 23.08.4
+[V] 24.02.1
 [P] X -----5---9 162.900
 
 [O] . $base/package/*/*/kde-conf.in
 
-[CV-FLAGS] ODD-STABLE
-[D] 4fdbee7175c3bb0d5cf4c69123962f4499977e9666d6c108766935ce mbox-importer-23.08.4.tar.xz https://download.kde.org/stable/release-service/23.08.4/src/
+[D] 00de31910d7e4d908791ef073876155690629c7fff05855c52737060 mbox-importer-24.02.1.tar.xz https://download.kde.org/stable/release-service/24.02.1/src/

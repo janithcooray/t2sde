@@ -25,10 +25,11 @@
 [C] extra/editor
 [E] opt gpm
 [E] opt tree-sitter
+[E] opt lcms2
 
 [L] GPL
 [S] Stable
-[V] 29.1
+[V] 29.3
 [P] X -----5---9 160.100
 
 [O] pkginstalled gtk && var_append extraconfopt ' ' '--with-x-toolkit=gtk --without-gsettings'
@@ -36,4 +37,4 @@
 [O] var_append GCC_WRAPPER_INSERT " " "-I$root$(pkgprefix includedir libx11)"
 [O] var_append GCC_WRAPPER_INSERT " " "-L$root$(pkgprefix libdir libx11)"
 
-[D] dfc07e213667f02d13175fd76457d25575b197823e1cf418f425754e emacs-29.1.tar.xz http://ftp.gnu.org/pub/gnu/emacs/
+[D] a2d38048ef5d4ef9a45d89884b7f10c87f0ec39881d1aa85143c111a emacs-29.3.tar.xz http://ftp.gnu.org/pub/gnu/emacs/
